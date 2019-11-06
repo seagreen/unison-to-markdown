@@ -1,0 +1,109 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: c99144a0a34bd51d030e1a5d93bc929941a6770ff8bc1e666e7bc4fa35ed25c8
+
+name:           unison-to-markdown
+version:        0.0.0
+build-type:     Simple
+
+library
+  exposed-modules:
+      Cli
+      Lib
+  other-modules:
+      Paths_unison_to_markdown
+  hs-source-dirs:
+      src
+  default-extensions: StrictData DataKinds DeriveAnyClass DeriveFunctor DeriveGeneric DerivingStrategies ExistentialQuantification FlexibleContexts FlexibleInstances FunctionalDependencies GADTs GeneralizedNewtypeDeriving InstanceSigs LambdaCase MultiParamTypeClasses NamedFieldPuns NoImplicitPrelude OverloadedStrings RankNTypes ScopedTypeVariables TypeFamilies TypeOperators
+  ghc-options: -Wall
+  build-depends:
+      aeson
+    , async
+    , base
+    , bytestring
+    , containers
+    , directory
+    , filepath
+    , gitrev
+    , hashable
+    , lens
+    , mtl
+    , optparse-applicative
+    , random
+    , safe-exceptions
+    , stm
+    , text
+    , time
+    , transformers
+    , unordered-containers
+  default-language: Haskell2010
+
+executable unison-to-markdown
+  main-is: Main.hs
+  other-modules:
+      Paths_unison_to_markdown
+  hs-source-dirs:
+      ./.
+  default-extensions: StrictData DataKinds DeriveAnyClass DeriveFunctor DeriveGeneric DerivingStrategies ExistentialQuantification FlexibleContexts FlexibleInstances FunctionalDependencies GADTs GeneralizedNewtypeDeriving InstanceSigs LambdaCase MultiParamTypeClasses NamedFieldPuns NoImplicitPrelude OverloadedStrings RankNTypes ScopedTypeVariables TypeFamilies TypeOperators
+  ghc-options: -Wall -threaded -rtsopts
+  build-depends:
+      aeson
+    , async
+    , base
+    , bytestring
+    , containers
+    , directory
+    , filepath
+    , gitrev
+    , hashable
+    , lens
+    , mtl
+    , optparse-applicative
+    , random
+    , safe-exceptions
+    , stm
+    , text
+    , time
+    , transformers
+    , unison-to-markdown
+    , unordered-containers
+  default-language: Haskell2010
+
+test-suite spec
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      LibSpec
+      Paths_unison_to_markdown
+  hs-source-dirs:
+      test
+  default-extensions: StrictData DataKinds DeriveAnyClass DeriveFunctor DeriveGeneric DerivingStrategies ExistentialQuantification FlexibleContexts FlexibleInstances FunctionalDependencies GADTs GeneralizedNewtypeDeriving InstanceSigs LambdaCase MultiParamTypeClasses NamedFieldPuns NoImplicitPrelude OverloadedStrings RankNTypes ScopedTypeVariables TypeFamilies TypeOperators
+  ghc-options: -Wall
+  build-depends:
+      QuickCheck
+    , aeson
+    , async
+    , base
+    , bytestring
+    , containers
+    , directory
+    , filepath
+    , gitrev
+    , hashable
+    , hspec
+    , lens
+    , mtl
+    , optparse-applicative
+    , random
+    , safe-exceptions
+    , stm
+    , text
+    , time
+    , transformers
+    , unison-to-markdown
+    , unordered-containers
+  default-language: Haskell2010
