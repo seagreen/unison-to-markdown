@@ -1,4 +1,5 @@
 name: unison-to-markdown
+license: BSD3
 default-extensions:
 
   # Notable

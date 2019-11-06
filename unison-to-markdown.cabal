@@ -4,10 +4,11 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: c99144a0a34bd51d030e1a5d93bc929941a6770ff8bc1e666e7bc4fa35ed25c8
+-- hash: cd91570da3acc2a99466c945342879feae677c9eea7291f04d8051b9fb437bec
 
 name:           unison-to-markdown
 version:        0.0.0
+license:        BSD3
 build-type:     Simple
 
 library
