@@ -36,6 +36,7 @@ dependencies:
   # Notable
 
   - gitrev
+  - unison-parser-typechecker
 
   # Other
 

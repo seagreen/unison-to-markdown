@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: cd91570da3acc2a99466c945342879feae677c9eea7291f04d8051b9fb437bec
+-- hash: c66a04395e27b7b5e73c8c3aad4fead25b4ae31be3f503d9bdfbd24410c3280f
 
 name:           unison-to-markdown
 version:        0.0.0
@@ -40,6 +40,7 @@ library
     , text
     , time
     , transformers
+    , unison-parser-typechecker
     , unordered-containers
   default-language: Haskell2010
 
@@ -70,6 +71,7 @@ executable unison-to-markdown
     , text
     , time
     , transformers
+    , unison-parser-typechecker
     , unison-to-markdown
     , unordered-containers
   default-language: Haskell2010
@@ -105,6 +107,7 @@ test-suite spec
     , text
     , time
     , transformers
+    , unison-parser-typechecker
     , unison-to-markdown
     , unordered-containers
   default-language: Haskell2010
