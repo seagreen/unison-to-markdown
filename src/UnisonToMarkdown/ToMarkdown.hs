@@ -8,8 +8,8 @@ import qualified Data.Text as Text
 
 toMarkdown :: ([Name], [Name]) -> Text
 toMarkdown (types, terms) =
-       "# Types \n\n" <> typesToMarkdown types <> "\n"
-  <> "\n# Terms \n\n" <> typesToMarkdown terms <> "\n"
+       "# Types\n\n" <> typesToMarkdown types <> "\n"
+  <> "\n# Terms\n\n" <> typesToMarkdown terms <> "\n"
 
 typesToMarkdown :: [Name] -> Text
 typesToMarkdown =

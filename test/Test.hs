@@ -11,5 +11,5 @@ main =
   hspec $
     describe "unison-to-markdown" $
       it "run" $ do
-        TIO.putStrLn =<< UnisonToMarkdown.run (UnisonToMarkdown.Config "./test")
-        pure ()
+        md <- UnisonToMarkdown.run (UnisonToMarkdown.Config "./test")
+        TIO.writeFile "./test/index.md" md
