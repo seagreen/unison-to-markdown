@@ -1,271 +1,273 @@
 # Types
 
-builtin.Boolean
-builtin.Bytes
-builtin.Char
-builtin.Request
-builtin.Float
-builtin.Int
-builtin.Nat
-builtin.List
-builtin.Text
-builtin.io.Socket
-builtin.io.HostName
-builtin.io.FilePath
-builtin.Unit
-builtin.Optional
-builtin.io.ErrorLocation
-builtin.io.ServiceName
-builtin.io.Handle
-builtin.io.Mode
-builtin.io.SeekMode
-builtin.io.ErrorDescription
-builtin.io.IO
-builtin.io.ThreadId
-builtin.io.Error
-builtin.Either
-builtin.io.EpochTime
-builtin.io.ErrorType
-builtin.Tuple
-builtin.io.BufferMode
-builtin.IsTest
-builtin.Test.Result
++ builtin.Boolean
++ builtin.Bytes
++ builtin.Char
++ builtin.Request
++ builtin.Float
++ builtin.Int
++ builtin.Nat
++ builtin.List
++ builtin.Text
++ builtin.io.Socket
++ builtin.io.HostName
++ builtin.io.FilePath
++ builtin.Unit
++ builtin.Optional
++ builtin.io.ErrorLocation
++ builtin.io.ServiceName
++ builtin.io.Handle
++ builtin.io.Mode
++ builtin.io.SeekMode
++ builtin.io.ErrorDescription
++ builtin.io.IO
++ builtin.io.ThreadId
++ builtin.io.Error
++ builtin.Either
++ builtin.io.EpochTime
++ builtin.io.ErrorType
++ builtin.Tuple
++ builtin.io.BufferMode
++ builtin.IsTest
++ builtin.Test.Result
+
 
 # Terms
 
-builtin.Boolean.not
-builtin.Bytes.++
-builtin.Bytes.at
-builtin.Bytes.drop
-builtin.Bytes.empty
-builtin.Bytes.flatten
-builtin.Bytes.fromList
-builtin.Bytes.size
-builtin.Bytes.take
-builtin.Bytes.toList
-builtin.Char.fromNat
-builtin.Char.toNat
-builtin.Debug.watch
-builtin.Float.*
-builtin.Float.+
-builtin.Float.-
-builtin.Float./
-builtin.Float.lt
-builtin.Float.lteq
-builtin.Float.eq
-builtin.Float.gt
-builtin.Float.gteq
-builtin.Float.abs
-builtin.Float.acos
-builtin.Float.acosh
-builtin.Float.asin
-builtin.Float.asinh
-builtin.Float.atan
-builtin.Float.atan2
-builtin.Float.atanh
-builtin.Float.ceiling
-builtin.Float.cos
-builtin.Float.cosh
-builtin.Float.exp
-builtin.Float.floor
-builtin.Float.fromText
-builtin.Float.log
-builtin.Float.logBase
-builtin.Float.max
-builtin.Float.min
-builtin.Float.pow
-builtin.Float.round
-builtin.Float.sin
-builtin.Float.sinh
-builtin.Float.sqrt
-builtin.Float.tan
-builtin.Float.tanh
-builtin.Float.toText
-builtin.Float.truncate
-builtin.Int.*
-builtin.Int.+
-builtin.Int.-
-builtin.Int./
-builtin.Int.lt
-builtin.Int.lteq
-builtin.Int.eq
-builtin.Int.gt
-builtin.Int.gteq
-builtin.Int.fromText
-builtin.Int.increment
-builtin.Int.isEven
-builtin.Int.isOdd
-builtin.Int.mod
-builtin.Int.negate
-builtin.Int.signum
-builtin.Int.toFloat
-builtin.Int.toText
-builtin.Int.truncate0
-builtin.List.++
-builtin.List.at
-builtin.List.+:
-builtin.List.cons
-builtin.List.drop
-builtin.List.empty
-builtin.List.size
-builtin.List.:+
-builtin.List.snoc
-builtin.List.take
-builtin.Nat.*
-builtin.Nat.+
-builtin.Nat./
-builtin.Nat.lt
-builtin.Nat.lteq
-builtin.Nat.eq
-builtin.Nat.gt
-builtin.Nat.gteq
-builtin.Nat.drop
-builtin.Nat.fromText
-builtin.Nat.increment
-builtin.Nat.isEven
-builtin.Nat.isOdd
-builtin.Nat.mod
-builtin.Nat.sub
-builtin.Nat.toFloat
-builtin.Nat.toInt
-builtin.Nat.toText
-builtin.Text.!=
-builtin.Text.++
-builtin.Text.lt
-builtin.Text.lteq
-builtin.Text.eq
-builtin.Text.gt
-builtin.Text.gteq
-builtin.Text.drop
-builtin.Text.empty
-builtin.Text.fromCharList
-builtin.Text.size
-builtin.Text.take
-builtin.Text.toCharList
-builtin.Text.uncons
-builtin.Text.unsnoc
-builtin.Universal.<
-builtin.Universal.<=
-builtin.Universal.==
-builtin.Universal.>
-builtin.Universal.>=
-builtin.Universal.compare
-builtin.io.renameFile
-builtin.io.createDirectory
-builtin.io.systemTime
-builtin.io.openFile
-builtin.io.getLine
-builtin.io.bracket
-builtin.io.send
-builtin.io.removeFile
-builtin.io.delay
-builtin.io.isFileEOF
-builtin.io.removeDirectory
-exampleAdd
-builtin.io.stdout
-builtin.io.position
-builtin.io.getCurrentDirectory
-builtin.io.setCurrentDirectory
-builtin.io.directoryContents
-builtin.io.isFileOpen
-builtin.io.fileExists
-builtin.io.getBuffering
-builtin.io.readLine
-builtin.io.stdin
-builtin.io.getTemporaryDirectory
-builtin.io.stderr
-builtin.io.getFileTimestamp
-builtin.io.isDirectory
-builtin.io.seek
-builtin.io.receive
-builtin.links.isTest
-builtin.io.getText
-builtin.io.setBuffering
-builtin.io.getFileSize
-builtin.io.serverSocket
-builtin.io.fork
-builtin.io.closeFile
-builtin.io.rethrow
-builtin.io.accept
-builtin.io.clientSocket
-builtin.io.kill
-builtin.io.closeSocket
-builtin.io.printLine
-builtin.io.listen
-builtin.io.renameDirectory
-builtin.io.isSeekable
-builtin.io.putText
-builtin.io.Socket.Socket
-builtin.io.HostName.HostName
-builtin.io.FilePath.FilePath
-builtin.Unit.Unit
-builtin.Optional.None
-builtin.Optional.Some
-builtin.io.ErrorLocation.ErrorLocation
-builtin.io.ServiceName.ServiceName
-builtin.io.Handle.Handle
-builtin.io.Mode.Read
-builtin.io.Mode.Write
-builtin.io.Mode.Append
-builtin.io.Mode.ReadWrite
-builtin.io.SeekMode.Absolute
-builtin.io.SeekMode.Relative
-builtin.io.SeekMode.FromEnd
-builtin.io.ErrorDescription.ErrorDescription
-builtin.io.IO.getFileSize_
-builtin.io.IO.kill_
-builtin.io.IO.send_
-builtin.io.IO.bracket_
-builtin.io.IO.getLine_
-builtin.io.IO.getText_
-builtin.io.IO.getFileTimestamp_
-builtin.io.IO.closeFile_
-builtin.io.IO.getTemporaryDirectory_
-builtin.io.IO.getCurrentDirectory_
-builtin.io.IO.renameDirectory_
-builtin.io.IO.renameFile_
-builtin.io.IO.receive_
-builtin.io.IO.fileExists_
-builtin.io.IO.isDirectory_
-builtin.io.IO.directoryContents_
-builtin.io.IO.listen_
-builtin.io.IO.closeSocket_
-builtin.io.IO.clientSocket_
-builtin.io.IO.delay_
-builtin.io.IO.seek_
-builtin.io.IO.serverSocket_
-builtin.io.IO.accept_
-builtin.io.IO.setBuffering_
-builtin.io.IO.openFile_
-builtin.io.IO.throw
-builtin.io.IO.fork_
-builtin.io.IO.getBuffering_
-builtin.io.IO.position_
-builtin.io.IO.setCurrentDirectory_
-builtin.io.IO.createDirectory_
-builtin.io.IO.removeDirectory_
-builtin.io.IO.removeFile_
-builtin.io.IO.systemTime_
-builtin.io.IO.isFileEOF_
-builtin.io.IO.isFileOpen_
-builtin.io.IO.isSeekable_
-builtin.io.IO.putText_
-builtin.io.ThreadId.ThreadId
-builtin.io.Error.Error
-builtin.Either.Left
-builtin.Either.Right
-builtin.io.EpochTime.EpochTime
-builtin.io.ErrorType.AlreadyExists
-builtin.io.ErrorType.NoSuchThing
-builtin.io.ErrorType.ResourceBusy
-builtin.io.ErrorType.ResourceExhausted
-builtin.io.ErrorType.EOF
-builtin.io.ErrorType.IllegalOperation
-builtin.io.ErrorType.PermissionDenied
-builtin.io.ErrorType.UserError
-builtin.Tuple.Cons
-builtin.io.BufferMode.Line
-builtin.io.BufferMode.Block
-builtin.IsTest.IsTest
-builtin.Test.Result.Fail
-builtin.Test.Result.Ok
++ builtin.Boolean.not
++ builtin.Bytes.++
++ builtin.Bytes.at
++ builtin.Bytes.drop
++ builtin.Bytes.empty
++ builtin.Bytes.flatten
++ builtin.Bytes.fromList
++ builtin.Bytes.size
++ builtin.Bytes.take
++ builtin.Bytes.toList
++ builtin.Char.fromNat
++ builtin.Char.toNat
++ builtin.Debug.watch
++ builtin.Float.*
++ builtin.Float.+
++ builtin.Float.-
++ builtin.Float./
++ builtin.Float.lt
++ builtin.Float.lteq
++ builtin.Float.eq
++ builtin.Float.gt
++ builtin.Float.gteq
++ builtin.Float.abs
++ builtin.Float.acos
++ builtin.Float.acosh
++ builtin.Float.asin
++ builtin.Float.asinh
++ builtin.Float.atan
++ builtin.Float.atan2
++ builtin.Float.atanh
++ builtin.Float.ceiling
++ builtin.Float.cos
++ builtin.Float.cosh
++ builtin.Float.exp
++ builtin.Float.floor
++ builtin.Float.fromText
++ builtin.Float.log
++ builtin.Float.logBase
++ builtin.Float.max
++ builtin.Float.min
++ builtin.Float.pow
++ builtin.Float.round
++ builtin.Float.sin
++ builtin.Float.sinh
++ builtin.Float.sqrt
++ builtin.Float.tan
++ builtin.Float.tanh
++ builtin.Float.toText
++ builtin.Float.truncate
++ builtin.Int.*
++ builtin.Int.+
++ builtin.Int.-
++ builtin.Int./
++ builtin.Int.lt
++ builtin.Int.lteq
++ builtin.Int.eq
++ builtin.Int.gt
++ builtin.Int.gteq
++ builtin.Int.fromText
++ builtin.Int.increment
++ builtin.Int.isEven
++ builtin.Int.isOdd
++ builtin.Int.mod
++ builtin.Int.negate
++ builtin.Int.signum
++ builtin.Int.toFloat
++ builtin.Int.toText
++ builtin.Int.truncate0
++ builtin.List.++
++ builtin.List.at
++ builtin.List.+:
++ builtin.List.cons
++ builtin.List.drop
++ builtin.List.empty
++ builtin.List.size
++ builtin.List.:+
++ builtin.List.snoc
++ builtin.List.take
++ builtin.Nat.*
++ builtin.Nat.+
++ builtin.Nat./
++ builtin.Nat.lt
++ builtin.Nat.lteq
++ builtin.Nat.eq
++ builtin.Nat.gt
++ builtin.Nat.gteq
++ builtin.Nat.drop
++ builtin.Nat.fromText
++ builtin.Nat.increment
++ builtin.Nat.isEven
++ builtin.Nat.isOdd
++ builtin.Nat.mod
++ builtin.Nat.sub
++ builtin.Nat.toFloat
++ builtin.Nat.toInt
++ builtin.Nat.toText
++ builtin.Text.!=
++ builtin.Text.++
++ builtin.Text.lt
++ builtin.Text.lteq
++ builtin.Text.eq
++ builtin.Text.gt
++ builtin.Text.gteq
++ builtin.Text.drop
++ builtin.Text.empty
++ builtin.Text.fromCharList
++ builtin.Text.size
++ builtin.Text.take
++ builtin.Text.toCharList
++ builtin.Text.uncons
++ builtin.Text.unsnoc
++ builtin.Universal.<
++ builtin.Universal.<=
++ builtin.Universal.==
++ builtin.Universal.>
++ builtin.Universal.>=
++ builtin.Universal.compare
++ builtin.io.renameFile
++ builtin.io.createDirectory
++ builtin.io.systemTime
++ builtin.io.openFile
++ builtin.io.getLine
++ builtin.io.bracket
++ builtin.io.send
++ builtin.io.removeFile
++ builtin.io.delay
++ builtin.io.isFileEOF
++ builtin.io.removeDirectory
++ exampleAdd
++ builtin.io.stdout
++ builtin.io.position
++ builtin.io.getCurrentDirectory
++ builtin.io.setCurrentDirectory
++ builtin.io.directoryContents
++ builtin.io.isFileOpen
++ builtin.io.fileExists
++ builtin.io.getBuffering
++ builtin.io.readLine
++ builtin.io.stdin
++ builtin.io.getTemporaryDirectory
++ builtin.io.stderr
++ builtin.io.getFileTimestamp
++ builtin.io.isDirectory
++ builtin.io.seek
++ builtin.io.receive
++ builtin.links.isTest
++ builtin.io.getText
++ builtin.io.setBuffering
++ builtin.io.getFileSize
++ builtin.io.serverSocket
++ builtin.io.fork
++ builtin.io.closeFile
++ builtin.io.rethrow
++ builtin.io.accept
++ builtin.io.clientSocket
++ builtin.io.kill
++ builtin.io.closeSocket
++ builtin.io.printLine
++ builtin.io.listen
++ builtin.io.renameDirectory
++ builtin.io.isSeekable
++ builtin.io.putText
++ builtin.io.Socket.Socket
++ builtin.io.HostName.HostName
++ builtin.io.FilePath.FilePath
++ builtin.Unit.Unit
++ builtin.Optional.None
++ builtin.Optional.Some
++ builtin.io.ErrorLocation.ErrorLocation
++ builtin.io.ServiceName.ServiceName
++ builtin.io.Handle.Handle
++ builtin.io.Mode.Read
++ builtin.io.Mode.Write
++ builtin.io.Mode.Append
++ builtin.io.Mode.ReadWrite
++ builtin.io.SeekMode.Absolute
++ builtin.io.SeekMode.Relative
++ builtin.io.SeekMode.FromEnd
++ builtin.io.ErrorDescription.ErrorDescription
++ builtin.io.IO.getFileSize_
++ builtin.io.IO.kill_
++ builtin.io.IO.send_
++ builtin.io.IO.bracket_
++ builtin.io.IO.getLine_
++ builtin.io.IO.getText_
++ builtin.io.IO.getFileTimestamp_
++ builtin.io.IO.closeFile_
++ builtin.io.IO.getTemporaryDirectory_
++ builtin.io.IO.getCurrentDirectory_
++ builtin.io.IO.renameDirectory_
++ builtin.io.IO.renameFile_
++ builtin.io.IO.receive_
++ builtin.io.IO.fileExists_
++ builtin.io.IO.isDirectory_
++ builtin.io.IO.directoryContents_
++ builtin.io.IO.listen_
++ builtin.io.IO.closeSocket_
++ builtin.io.IO.clientSocket_
++ builtin.io.IO.delay_
++ builtin.io.IO.seek_
++ builtin.io.IO.serverSocket_
++ builtin.io.IO.accept_
++ builtin.io.IO.setBuffering_
++ builtin.io.IO.openFile_
++ builtin.io.IO.throw
++ builtin.io.IO.fork_
++ builtin.io.IO.getBuffering_
++ builtin.io.IO.position_
++ builtin.io.IO.setCurrentDirectory_
++ builtin.io.IO.createDirectory_
++ builtin.io.IO.removeDirectory_
++ builtin.io.IO.removeFile_
++ builtin.io.IO.systemTime_
++ builtin.io.IO.isFileEOF_
++ builtin.io.IO.isFileOpen_
++ builtin.io.IO.isSeekable_
++ builtin.io.IO.putText_
++ builtin.io.ThreadId.ThreadId
++ builtin.io.Error.Error
++ builtin.Either.Left
++ builtin.Either.Right
++ builtin.io.EpochTime.EpochTime
++ builtin.io.ErrorType.AlreadyExists
++ builtin.io.ErrorType.NoSuchThing
++ builtin.io.ErrorType.ResourceBusy
++ builtin.io.ErrorType.ResourceExhausted
++ builtin.io.ErrorType.EOF
++ builtin.io.ErrorType.IllegalOperation
++ builtin.io.ErrorType.PermissionDenied
++ builtin.io.ErrorType.UserError
++ builtin.Tuple.Cons
++ builtin.io.BufferMode.Line
++ builtin.io.BufferMode.Block
++ builtin.IsTest.IsTest
++ builtin.Test.Result.Fail
++ builtin.Test.Result.Ok
+

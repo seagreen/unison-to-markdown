@@ -13,4 +13,9 @@ toMarkdown (types, terms) =
 
 typesToMarkdown :: [Name] -> Text
 typesToMarkdown =
-  Text.intercalate "\n" . fmap (Text.pack . show)
+  foldMap f
+  where
+    f :: Name -> Text
+    f n =
+      "+ " <> Text.pack (show n) <> "\n"
+
