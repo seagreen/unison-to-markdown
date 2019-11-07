@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 9ac1defee111c3d11c76fe496279ab1b8eca514af2fa6f6925a07d90debaf54e
+-- hash: b04217b1d02ded2ab4f13f1b6e9703960032847f131039fd6fa2d15ca2cf98ac
 
 name:           unison-to-markdown
 version:        0.0.0
@@ -14,6 +14,8 @@ build-type:     Simple
 library
   exposed-modules:
       UnisonToMarkdown
+      UnisonToMarkdown.FromUnison
+      UnisonToMarkdown.ToMarkdown
   other-modules:
       Paths_unison_to_markdown
   hs-source-dirs:
