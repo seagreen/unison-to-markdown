@@ -25,8 +25,8 @@ main =
       info
         (helper <*> versionOption <*> parser)
         (  fullDesc
-        <> header "Example header"
-        <> progDesc "Example program description."
+        <> header "unison-to-markdown"
+        <> progDesc "Produce a Markdown index from a Unison codebase."
         )
 
     versionOption :: Parser (a -> a)
@@ -51,10 +51,9 @@ main =
       Config
         <$>
           strOption
-            (  long "string_param"
-            <> short 's'
-            <> metavar "STRING"
-            <> help "string parameter"
-            <> value "default_value"
+            (  long "codebase"
+            <> metavar "CODEBASE_PATH"
+            <> help "Path to directory containing .unison codebase"
+            <> value "."
             <> showDefault
             )

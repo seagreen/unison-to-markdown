@@ -27,7 +27,6 @@ run (Config path) = do
   branch :: Branch IO
     <- FileCodebase.getRootBranch (path </> ".unison/v1")
 
-
   let
     branch0 :: Branch0 IO
     branch0 =
