@@ -35,44 +35,34 @@ dependencies:
 
   # Notable
 
-  - gitrev
   - unison-parser-typechecker
 
   # Other
 
-  - aeson
-  - async
   - base
   - bytestring
   - containers
-  - directory
   - filepath
-  - hashable
-  - lens
-  - mtl
-  - optparse-applicative
-  - random
-  - safe-exceptions
-  - stm
   - text
-  - time
-  - transformers
   - unordered-containers
 
 library:
   source-dirs: src
+
 executables:
   unison-to-markdown:
     source-dirs: .
     main: Main.hs
     ghc-options: -threaded -rtsopts
     dependencies:
+      - gitrev
+      - optparse-applicative
       - unison-to-markdown
+
 tests:
   spec:
     source-dirs: test
-    main: Spec.hs
+    main: Test.hs
     dependencies:
       - hspec
-      - QuickCheck
       - unison-to-markdown

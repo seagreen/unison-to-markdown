@@ -1,0 +1,2 @@
+exampleAdd : .builtin.Nat -> .builtin.Nat -> .builtin.Nat
+exampleAdd a b = a + b
