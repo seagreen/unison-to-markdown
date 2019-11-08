@@ -35,7 +35,7 @@ mainEntries =
   where
     f :: Name -> Text
     f n =
-         "<a name='" <> generateAnchorLink n <> "'/>)\n\n"
+         "<a name='" <> generateAnchorLink n <> "'/>\n\n"
       <> "### " <> Text.pack (show n) <> "\n\n"
       <> "```\n" <> "lorem ipsum\n" <> "```\n\n"
 
