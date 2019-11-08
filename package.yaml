@@ -34,8 +34,8 @@ dependencies:
 
   # Notable
 
+  - hashable
   - unison-parser-typechecker
-  - uri-encode
 
   # Other
 

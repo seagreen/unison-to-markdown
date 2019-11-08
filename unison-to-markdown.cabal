@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 519b578066441dc872167aaa7d745c0ac7b2c3d7e74061b6d04606ef1334be05
+-- hash: 661f9b2b1324ce05d369aa1467f1281b41d33c599d140dbc6a870db980da13ef
 
 name:           unison-to-markdown
 version:        0.0.0
@@ -27,10 +27,10 @@ library
     , bytestring
     , containers
     , filepath
+    , hashable
     , text
     , unison-parser-typechecker
     , unordered-containers
-    , uri-encode
   default-language: Haskell2010
 
 executable unison-to-markdown
@@ -47,12 +47,12 @@ executable unison-to-markdown
     , containers
     , filepath
     , gitrev
+    , hashable
     , optparse-applicative
     , text
     , unison-parser-typechecker
     , unison-to-markdown
     , unordered-containers
-    , uri-encode
   default-language: Haskell2010
 
 test-suite spec
@@ -69,10 +69,10 @@ test-suite spec
     , bytestring
     , containers
     , filepath
+    , hashable
     , hspec
     , text
     , unison-parser-typechecker
     , unison-to-markdown
     , unordered-containers
-    , uri-encode
   default-language: Haskell2010
