@@ -32,13 +32,13 @@ indexEntries =
 
 mainEntries :: Map Name Text -> Text
 mainEntries =
-  foldMap (f . fst) . Map.toAscList
+  foldMap f . Map.toAscList
   where
-    f :: Name -> Text
-    f n =
-         "<a name='" <> generateAnchorLink n <> "'/>\n\n"
-      <> "### " <> Text.pack (show n) <> "\n\n"
-      <> "```\n" <> "lorem ipsum\n" <> "```\n\n"
+    f :: (Name, Text) -> Text
+    f (name, src) =
+         "<a name='" <> generateAnchorLink name <> "'/>\n\n"
+      <> "### " <> Text.pack (show name) <> "\n\n"
+      <> "```unison\n" <> src <> "\n" <> "```\n\n"
 
 -- | Create out own anchor links using Hashable.
 --
