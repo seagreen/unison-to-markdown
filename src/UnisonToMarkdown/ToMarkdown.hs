@@ -37,6 +37,9 @@ indexEntries =
     -- So `builtin.Boolean` creates the link `#builtinboolean`
     --
     -- TODO: handle conflicting links.
+    --
+    -- Probably via named custom headers: https://stackoverflow.com/a/48453745
+    --
     -- For instance these three entries:
     --
     -- builtin.List.++
