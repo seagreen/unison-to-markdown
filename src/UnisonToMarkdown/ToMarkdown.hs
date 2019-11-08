@@ -10,13 +10,34 @@ import qualified Data.Text as Text
 
 toMarkdown :: (Map Name (), Map Name ()) -> Text
 toMarkdown (types, terms) =
-       "# Types\n\n" <> indexEntry (Map.toAscList types) <> "\n"
-  <> "\n# Terms\n\n" <> indexEntry (Map.toAscList terms) <> "\n"
+     "# Table of Contents" <> "\n\n"
+  <> "## Types\n\n"
+  <> indexEntries types <> "\n"
+  <> "## Terms\n\n"
+  <> indexEntries terms <> "\n"
+  <> "# Types" <> "\n\n"
+  <> mainEntries types <> "\n"
+  <> "# Terms" <> "\n\n"
+  <> mainEntries terms
 
-indexEntry :: [(Name, ())] -> Text
-indexEntry =
-  foldMap (f . fst)
+indexEntries :: Map Name () -> Text
+indexEntries =
+  foldMap (f . fst) . Map.toAscList
   where
     f :: Name -> Text
     f n =
-      "+ " <> Text.pack (show n) <> "\n"
+      let
+        t :: Text
+        t =
+          Text.pack (show n)
+      in
+      "+ [" <> t <> "](#" <> t <> ")\n"
+
+mainEntries :: Map Name () -> Text
+mainEntries =
+  foldMap (f . fst) . Map.toAscList
+  where
+    f :: Name -> Text
+    f n =
+         "### " <> Text.pack (show n) <> "\n\n"
+      <> "```\n" <> "lorem ipsum\n" <> "```\n\n"
