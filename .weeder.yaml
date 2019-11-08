@@ -1,9 +1,0 @@
-- message:
-  - name: Redundant build-depends entry
-  - depends:
-    - bytestring
-    - containers
-    - hashable
-    - text
-    - unordered-containers
-    - vector
