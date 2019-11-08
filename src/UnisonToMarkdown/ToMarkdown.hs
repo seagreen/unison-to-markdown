@@ -31,7 +31,12 @@ indexEntries =
         t =
           Text.pack (show n)
       in
-      "+ [" <> t <> "](#" <> t <> ")\n"
+      "+ [" <> t <> "](#" <> toLink t <> ")\n"
+
+    -- eg the link for `builtin.Boolean` is `builtinboolean`
+    toLink :: Text -> Text
+    toLink =
+      Text.filter (/= '.')
 
 mainEntries :: Map Name () -> Text
 mainEntries =
