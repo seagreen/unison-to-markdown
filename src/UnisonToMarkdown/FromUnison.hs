@@ -20,10 +20,9 @@ import qualified Unison.Codebase.FileCodebase as FileCodebase
 import qualified Unison.Util.Relation as Relation
 import qualified Unison.Util.Star3 as Star3
 
--- fromUnison :: FilePath -> IO Text
 fromUnison path = do
 
-  -- Not used, just a note that either this or getRootBranch
+  -- TODO: either this or getRootBranch
   -- should be changed upstream to take the same string.
   --
   -- _ <- FileCodebase.getCodebaseOrExit (Just ".")
@@ -36,6 +35,11 @@ fromUnison path = do
     branch0 =
       Branch.head branch
 
+  pure (getTypes branch0, getTerms branch0)
+
+getTypes :: Branch0 IO -> Map Name ()
+getTypes branch0 =
+  let
     --Reference: reference to a type
     types :: Star Reference Name
     types =
@@ -50,7 +54,12 @@ fromUnison path = do
       -- TODO: Why can there be multiple References for a name?
       -- Is picking one at random like I do here right?
       Map.mapMaybe setToMaybe (Relation.range d1Types)
+  in
+    const () <$> typeMap
 
+getTerms :: Branch0 IO -> Map Name ()
+getTerms branch0 =
+  let
     -- Referent: reference to a term
     terms :: Star3 Referent Name Type (Type, Value)
     terms =
@@ -72,8 +81,8 @@ fromUnison path = do
 
           Con{} ->
             Nothing
-
-  pure (const () <$> typeMap, const () <$> termMap)
+  in
+    const () <$> termMap
 
 setToMaybe :: Set a -> Maybe a
 setToMaybe =
