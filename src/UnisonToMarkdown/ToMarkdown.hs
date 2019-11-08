@@ -33,7 +33,21 @@ indexEntries =
       in
       "+ [" <> t <> "](#" <> toLink t <> ")\n"
 
-    -- eg the link for `builtin.Boolean` is `builtinboolean`
+    -- GitHub drops punctuation from links.
+    -- So `builtin.Boolean` creates the link `#builtinboolean`
+    --
+    -- TODO: handle conflicting links.
+    -- For instance these three entries:
+    --
+    -- builtin.List.++
+    -- builtin.List.+:
+    -- builtin.List.:+
+    --
+    -- result in these three links:
+    --
+    -- #builtinlist-1
+    -- #builtinlist-2
+    -- #builtinlist-3
     toLink :: Text -> Text
     toLink =
       Text.filter (/= '.')
