@@ -5,6 +5,7 @@ import Data.Text (Text)
 import Prelude
 import Unison.Name
 
+import qualified Network.URI.Encode as URI
 import qualified Data.Map as Map
 import qualified Data.Text as Text
 
@@ -31,29 +32,7 @@ indexEntries =
         t =
           Text.pack (show n)
       in
-      "+ [" <> t <> "](#" <> toLink t <> ")\n"
-
-    -- GitHub drops punctuation from links.
-    -- So `builtin.Boolean` creates the link `#builtinboolean`
-    --
-    -- TODO: handle conflicting links.
-    --
-    -- Probably via named custom headers: https://stackoverflow.com/a/48453745
-    --
-    -- For instance these three entries:
-    --
-    -- builtin.List.++
-    -- builtin.List.+:
-    -- builtin.List.:+
-    --
-    -- result in these three links:
-    --
-    -- #builtinlist-1
-    -- #builtinlist-2
-    -- #builtinlist-3
-    toLink :: Text -> Text
-    toLink =
-      Text.filter (/= '.')
+      "+ [" <> t <> "](#" <> URI.encodeText t <> ")\n"
 
 mainEntries :: Map Name () -> Text
 mainEntries =
@@ -61,5 +40,28 @@ mainEntries =
   where
     f :: Name -> Text
     f n =
-         "### " <> Text.pack (show n) <> "\n\n"
+         -- GitHub creates anchor links by dropping punctuation.
+         --
+         -- For instance the header `# builtin.Boolean`
+         -- creates the link `#builtinboolean`
+         --
+         -- It also appends a hypen and a number to distinguish duplicate link.
+         --
+         -- For intstance these header:
+         --
+         -- # builtin.List.++
+         -- # builtin.List.+:
+         -- # builtin.List.:+
+         --
+         -- result in these links:
+         --
+         -- #builtinlist-1
+         -- #builtinlist-2
+         -- #builtinlist-3
+         --
+         -- To avoid having to try to match that behavior we create our
+         -- own anchor links with an <a> tag:
+         "<a name='" <> URI.encodeText (Text.pack (show n)) <> "'/>\n\n"
+
+      <> "### " <> Text.pack (show n) <> "\n\n"
       <> "```\n" <> "lorem ipsum\n" <> "```\n\n"
