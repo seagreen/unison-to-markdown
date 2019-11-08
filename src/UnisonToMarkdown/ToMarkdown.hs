@@ -9,7 +9,8 @@ import qualified Data.Hashable as Hashable
 import qualified Data.Map as Map
 import qualified Data.Text as Text
 
-toMarkdown :: (Map Name (), Map Name ()) -> Text
+-- | The @Text@ in @Map Name Text@ is pretty printed source.
+toMarkdown :: (Map Name Text, Map Name Text) -> Text
 toMarkdown (types, terms) =
      "# Table of Contents" <> "\n\n"
   <> "## Types\n\n"
@@ -21,7 +22,7 @@ toMarkdown (types, terms) =
   <> "# Terms" <> "\n\n"
   <> mainEntries terms
 
-indexEntries :: Map Name () -> Text
+indexEntries :: Map Name Text -> Text
 indexEntries =
   foldMap (f . fst) . Map.toAscList
   where
@@ -29,7 +30,7 @@ indexEntries =
     f n =
       "+ [" <> Text.pack (show n) <> "](#" <> generateAnchorLink n <> ")\n"
 
-mainEntries :: Map Name () -> Text
+mainEntries :: Map Name Text -> Text
 mainEntries =
   foldMap (f . fst) . Map.toAscList
   where

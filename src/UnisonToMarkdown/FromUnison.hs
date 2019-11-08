@@ -12,6 +12,7 @@ import Unison.Reference
 import Unison.Referent
 import Unison.Util.Relation
 import Unison.Util.Star3
+import Data.Text (Text)
 
 import qualified Data.Map.Strict as Map
 import qualified Data.Set as Set
@@ -20,6 +21,8 @@ import qualified Unison.Codebase.FileCodebase as FileCodebase
 import qualified Unison.Util.Relation as Relation
 import qualified Unison.Util.Star3 as Star3
 
+-- | The @Text@ in @Map Name Text@ is pretty printed source.
+fromUnison :: FilePath -> IO (Map Name Text, Map Name Text)
 fromUnison path = do
 
   -- TODO: either this or getRootBranch
@@ -37,7 +40,7 @@ fromUnison path = do
 
   pure (getTypes branch0, getTerms branch0)
 
-getTypes :: Branch0 IO -> Map Name ()
+getTypes :: Branch0 IO -> Map Name Text
 getTypes branch0 =
   let
     --Reference: reference to a type
@@ -55,9 +58,9 @@ getTypes branch0 =
       -- Is picking one at random like I do here right?
       Map.mapMaybe setToMaybe (Relation.range d1Types)
   in
-    const () <$> typeMap
+    const "lorem ipsum" <$> typeMap
 
-getTerms :: Branch0 IO -> Map Name ()
+getTerms :: Branch0 IO -> Map Name Text
 getTerms branch0 =
   let
     -- Referent: reference to a term
@@ -82,7 +85,7 @@ getTerms branch0 =
           Con{} ->
             Nothing
   in
-    const () <$> termMap
+    const "lorem ipsum" <$> termMap
 
 setToMaybe :: Set a -> Maybe a
 setToMaybe =
