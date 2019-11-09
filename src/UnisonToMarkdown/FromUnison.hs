@@ -1,22 +1,24 @@
 module UnisonToMarkdown.FromUnison where
 
-import Unison.DataDeclaration
 import Control.Monad
 import Data.Map (Map)
 import Data.Set (Set)
 import Data.Text (Text)
 import Prelude hiding (id)
+import System.Exit (exitFailure)
 import System.FilePath ((</>))
+import System.IO (stderr)
 import Unison.Codebase
 import Unison.Codebase.Branch (Branch, Branch0, Star)
 import Unison.Codebase.Metadata hiding (Star)
+import Unison.DataDeclaration
+import Unison.DeclPrinter
 import Unison.HashQualified
 import Unison.Name
 import Unison.Names3
 import Unison.Reference
 import Unison.Referent
 import Unison.Symbol
-import Unison.DeclPrinter
 import Unison.TermPrinter
 import Unison.Util.Pretty hiding (toPlain)
 import Unison.Util.Relation
@@ -26,6 +28,7 @@ import Unison.Util.SyntaxText
 import qualified Data.Map.Strict as Map
 import qualified Data.Set as Set
 import qualified Data.Text as Text
+import qualified Data.Text.IO as TIO
 import qualified Unison.Codebase.Branch as Branch
 import qualified Unison.Codebase.FileCodebase as FileCodebase
 import qualified Unison.PrettyPrintEnv as PPE
@@ -112,8 +115,7 @@ printType codebase branch0 name ref =
       mDecl <- getTypeDeclaration codebase id
       case mDecl of
         Nothing ->
-          -- TODO: what to do here?
-          error ("type not found " <> show (name, id))
+          exitNotFound name id
 
         Just (decl :: Decl Symbol ann) ->
           case decl of
@@ -148,8 +150,7 @@ printTerm codebase branch0 name ref =
       mTerm <- getTerm codebase id
       case mTerm of
         Nothing ->
-          -- TODO: what to do here?
-          error ("term not found " <> show (name, id))
+          exitNotFound name id
 
         Just term ->
           let
@@ -174,3 +175,16 @@ headMaybe = \case
 
   a:_ ->
     Just a
+
+exitNotFound :: Name -> Id -> IO a
+exitNotFound (Name name) id =
+  exitWithError
+    (  "Failed id lookup. Has your .unison codebase become corrupted?\n"
+    <> "for id: "<> Text.pack (show id) <> "\n"
+    <> "which is associated with name: " <> name <> "\n"
+    )
+
+exitWithError :: Text -> IO a
+exitWithError e = do
+  TIO.hPutStrLn stderr e
+  exitFailure
