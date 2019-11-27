@@ -1,0 +1,4 @@
+--command "stack ghci --test --main-is unison-to-markdown:spec"
+--test "Main.main"
+--warnings
+--restart package.yaml
