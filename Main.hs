@@ -63,7 +63,7 @@ main =
               (  long "namespace"
               <> metavar "NAMESPACE_PATH"
               <> help
-                   (  "Output a specific namespace and its dependencies"
+                   (  "Output a specific namespace " -- and its dependencies"
                    <> " instead of the whole codebase"
                    )
               )
