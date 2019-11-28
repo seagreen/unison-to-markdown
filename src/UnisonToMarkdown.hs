@@ -1,8 +1,4 @@
-module UnisonToMarkdown
-  ( module UnisonToMarkdown
-  , module UnisonToMarkdown.FromUnison
-  , module UnisonToMarkdown.ToMarkdown
-  ) where
+module UnisonToMarkdown where
 
 import Data.Text (Text)
 import Prelude
