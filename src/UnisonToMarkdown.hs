@@ -10,9 +10,18 @@ import UnisonToMarkdown.FromUnison
 import UnisonToMarkdown.ToMarkdown
 
 -- | @FilePath@ is a directory containing a @.unison@ codebase.
-data Config = Config FilePath deriving Show
+data Config = Config
+  { unisonCodebase :: FilePath
+  , namespace :: Maybe Text
+  } deriving Show
 
 run :: Config -> IO Text
-run (Config path) = do
-  res <- fromUnison path
-  pure (toMarkdown res)
+run (Config path mNamespace) =
+  case mNamespace of
+    Nothing -> do
+      res <- fromUnisonAll path
+      pure (toMarkdownAll res)
+
+    Just namespace -> do
+      res <- fromUnisonNamespace path namespace
+      pure (toMarkdownNamespace namespace res)

@@ -35,9 +35,49 @@ import qualified Unison.PrettyPrintEnv as PPE
 import qualified Unison.Util.Relation as Relation
 import qualified Unison.Util.Star3 as Star3
 
--- | The @Text@ in @Map Name Text@ is pretty printed source.
-fromUnison :: FilePath -> IO (Map Name Text, Map Name Text)
-fromUnison path = do
+data All = All
+  { allTypes :: Map Name Text
+    -- ^ The @Text@ is pretty printed source.
+  , allTerms :: Map Name Text
+  } deriving (Eq, Show)
+
+data NamespaceAndDeps = NamespaceAndDeps
+  { namespaceTypes :: Map Name Text
+    -- ^ The @Text@ is pretty printed source.
+  , namespaceTerms :: Map Name Text
+  , depTypes :: Map Name Text
+  , depTerms :: Map Name Text
+  } deriving (Eq, Show)
+
+fromUnisonNamespace :: FilePath -> Text -> IO NamespaceAndDeps
+fromUnisonNamespace path namespace = do
+  codebase <- FileCodebase.getCodebaseOrExit (Just (path </> "."))
+
+  branch :: Branch IO
+    <- FileCodebase.getRootBranch (path </> ".unison/v1")
+
+  let
+    branch0 :: Branch0 IO
+    branch0 =
+      Branch.head branch
+
+    isInNamespace :: Name -> v -> Bool
+    isInNamespace (Name name) _ =
+      Text.isPrefixOf namespace name && namespace /= name
+
+  types <- getTypes codebase branch0
+  terms <- getTerms codebase branch0
+
+  pure NamespaceAndDeps
+    { namespaceTypes = Map.filterWithKey isInNamespace types
+    , namespaceTerms = Map.filterWithKey isInNamespace terms
+    , depTypes = mempty
+    , depTerms = mempty
+    }
+
+-- | NOTE: there's some duplication between this and 'fromUnisonNamespace'.
+fromUnisonAll :: FilePath -> IO All
+fromUnisonAll path = do
 
   -- TODO: either this or getRootBranch
   -- should be changed upstream to take the same string.
@@ -51,7 +91,7 @@ fromUnison path = do
     branch0 =
       Branch.head branch
 
-  (,) <$> getTypes codebase branch0 <*> getTerms codebase branch0
+  All <$> getTypes codebase branch0 <*> getTerms codebase branch0
 
 getTypes :: Codebase IO Symbol ann ->  Branch0 IO -> IO (Map Name Text)
 getTypes codebase branch0 =
