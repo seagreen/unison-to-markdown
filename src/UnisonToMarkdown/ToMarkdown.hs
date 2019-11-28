@@ -11,9 +11,7 @@ import qualified Data.Map as Map
 import qualified Data.Text as Text
 
 toMarkdownNamespace :: Text -> NamespaceAndDeps -> Text
-toMarkdownNamespace
-  namespace
-  NamespaceAndDeps{namespaceTypes, namespaceTerms, depTypes, depTerms} =
+toMarkdownNamespace namespace NamespaceAndDeps{namespaceTypes, namespaceTerms} =
 
      "# " <> namespace <> " table of contents" <> "\n\n"
   <> "## Types\n\n"
@@ -24,10 +22,10 @@ toMarkdownNamespace
   <> mainEntries namespaceTypes <> "\n"
   <> "# Terms" <> "\n\n"
   <> mainEntries namespaceTerms
-  <> "# Dependency types" <> "\n\n"
-  <> mainEntries depTypes <> "\n"
-  <> "# Dependency terms" <> "\n\n"
-  <> mainEntries depTerms
+  -- <> "# Dependency types" <> "\n\n"
+  -- <> mainEntries depTypes <> "\n"
+  -- <> "# Dependency terms" <> "\n\n"
+  -- <> mainEntries depTerms
 
 toMarkdownAll :: All -> Text
 toMarkdownAll (All types terms) =
