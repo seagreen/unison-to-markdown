@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 661f9b2b1324ce05d369aa1467f1281b41d33c599d140dbc6a870db980da13ef
+-- hash: 39793424d9745402efca385e4496affac4efd29817726dc4c6675d73f2818066
 
 name:           unison-to-markdown
 version:        0.0.0
@@ -16,6 +16,7 @@ library
       UnisonToMarkdown
       UnisonToMarkdown.FromUnison
       UnisonToMarkdown.ToMarkdown
+      UnisonToMarkdown.ToMarkdown.Link
   other-modules:
       Paths_unison_to_markdown
   hs-source-dirs:
@@ -26,8 +27,9 @@ library
       base
     , bytestring
     , containers
+    , cryptohash-md5
     , filepath
-    , hashable
+    , sandi
     , text
     , unison-parser-typechecker
     , unordered-containers
@@ -45,10 +47,11 @@ executable unison-to-markdown
       base
     , bytestring
     , containers
+    , cryptohash-md5
     , filepath
     , gitrev
-    , hashable
     , optparse-applicative
+    , sandi
     , text
     , unison-parser-typechecker
     , unison-to-markdown
@@ -68,9 +71,10 @@ test-suite spec
       base
     , bytestring
     , containers
+    , cryptohash-md5
     , filepath
-    , hashable
     , hspec
+    , sandi
     , text
     , unison-parser-typechecker
     , unison-to-markdown

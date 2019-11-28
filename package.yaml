@@ -34,7 +34,8 @@ dependencies:
 
   # Notable
 
-  - hashable
+  - sandi # for base32 encoding
+  - cryptohash-md5
   - unison-parser-typechecker
 
   # Other

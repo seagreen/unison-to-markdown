@@ -2,205 +2,205 @@
 
 ## Types
 
-+ [builtin.Boolean](#6306107192279472826)
-+ [builtin.Bytes](#3897716605628038017)
-+ [builtin.Char](#5245241711139589005)
-+ [builtin.Either](#5572193597304070436)
-+ [builtin.Float](#617572644675272590)
-+ [builtin.Int](#3832676917859339683)
-+ [builtin.IsTest](#4432933224895344673)
-+ [builtin.List](#1424777922347868611)
-+ [builtin.Nat](#2186573045580090773)
-+ [builtin.Optional](#5220643134797035825)
-+ [builtin.Request](#1267204749295824727)
-+ [builtin.Test.Result](#8738896027400783533)
-+ [builtin.Text](#4156348005617393268)
-+ [builtin.Tuple](#5573141728625805998)
-+ [builtin.Unit](#1276183637339978185)
-+ [builtin.io.BufferMode](#7639649842682908765)
-+ [builtin.io.EpochTime](#4800730452074110371)
-+ [builtin.io.Error](#6881305932018128677)
-+ [builtin.io.ErrorDescription](#631802764988078740)
-+ [builtin.io.ErrorLocation](#400363865334050740)
-+ [builtin.io.ErrorType](#8823105272910210663)
-+ [builtin.io.FilePath](#8011563717472886547)
-+ [builtin.io.Handle](#7000936550009132492)
-+ [builtin.io.HostName](#7685462072081011933)
-+ [builtin.io.IO](#4716768780565495378)
-+ [builtin.io.Mode](#1315077711476797533)
-+ [builtin.io.SeekMode](#4064744426201103269)
-+ [builtin.io.ServiceName](#6391572444526865715)
-+ [builtin.io.Socket](#5549792368903176339)
-+ [builtin.io.ThreadId](#1674608298260786667)
++ [builtin.Boolean](#e6f5zccjzbv5wuadb7npy2c2bm)
++ [builtin.Bytes](#342jfmmocru2fc63h3437pb23y)
++ [builtin.Char](#2vosqowpjxgzcmqp5m2ra6ue3y)
++ [builtin.Either](#6heaozdhamjgez3zoae2wmnady)
++ [builtin.Float](#vjwrshr445vnu3i6d36urtcqjm)
++ [builtin.Int](#xq7t7lxiwautwnliu57hpxnchy)
++ [builtin.IsTest](#bd2emrysvxzwcuutmmtw2tvntu)
++ [builtin.List](#k4nsssalrhfzc7aanjbsmqrkau)
++ [builtin.Nat](#5tpsxn4lzmxfaxjbtdvjxejel4)
++ [builtin.Optional](#vig25frxmfmnrlsxli5panwpxm)
++ [builtin.Request](#abexuew7yqq64zq2ijkaglsiay)
++ [builtin.Test.Result](#uavoq4ps3owdbngjmmrfyyuaue)
++ [builtin.Text](#xdofvxeowt755szvqpbhhj7mae)
++ [builtin.Tuple](#cunrr57yuxnklx7yz36gmqczsq)
++ [builtin.Unit](#m3foedersy5skxta5ycythv6yy)
++ [builtin.io.BufferMode](#6un2h33oy6qhinpgpxa3mwbrw4)
++ [builtin.io.EpochTime](#6oixfqlyjemavsg6skuzjarvyq)
++ [builtin.io.Error](#uermdn3lvcg35ibrcb4yklmp7y)
++ [builtin.io.ErrorDescription](#y76fv4jgawmnnzxq3bcknlv6su)
++ [builtin.io.ErrorLocation](#hheh3cwsychsmuhslaqtbv7i4a)
++ [builtin.io.ErrorType](#l5y3obnoooxx2vs7wygsex3ypu)
++ [builtin.io.FilePath](#yqk5q4wtwkbmpfpxc7a5pkmbae)
++ [builtin.io.Handle](#daizk3nwe4mdhbwfitufujb4wq)
++ [builtin.io.HostName](#fwlsqgi3s655duzanzgk3gnfeu)
++ [builtin.io.IO](#wfvrhht3dbexc47ytfpufrm23m)
++ [builtin.io.Mode](#cnr7zvu3qhqv6fd7g5thu7xw4m)
++ [builtin.io.SeekMode](#2hupcpprdmvqcrlaavm2ujzw3y)
++ [builtin.io.ServiceName](#pmf2taqtjab5ezvsf4d5zgtvhy)
++ [builtin.io.Socket](#qef2a2ahsgx5ko5yt6ktd32uyu)
++ [builtin.io.ThreadId](#tqdsdwgxebjhavmak5sfy3f32y)
 
 ## Terms
 
-+ [builtin.Boolean.not](#7303144659369981397)
-+ [builtin.Bytes.++](#1439477776726142242)
-+ [builtin.Bytes.at](#1418647627022271505)
-+ [builtin.Bytes.drop](#3187582489422264371)
-+ [builtin.Bytes.empty](#8951136362131366022)
-+ [builtin.Bytes.flatten](#1101531528408829737)
-+ [builtin.Bytes.fromList](#2202563138110542798)
-+ [builtin.Bytes.size](#3587442715395550367)
-+ [builtin.Bytes.take](#33427196685056485)
-+ [builtin.Bytes.toList](#4306366734554417779)
-+ [builtin.Char.fromNat](#1587873577456361474)
-+ [builtin.Char.toNat](#5339163095314859991)
-+ [builtin.Debug.watch](#5132912380557838624)
-+ [builtin.Float.*](#7583365280543984584)
-+ [builtin.Float.+](#7583365280527206971)
-+ [builtin.Float.-](#7583365280493651713)
-+ [builtin.Float./](#7583365280460096487)
-+ [builtin.Float.abs](#5517456903114460232)
-+ [builtin.Float.acos](#6279795193250302089)
-+ [builtin.Float.acosh](#6472644911537236324)
-+ [builtin.Float.asin](#871405957563439646)
-+ [builtin.Float.asinh](#2560758465141952933)
-+ [builtin.Float.atan](#846477482777860551)
-+ [builtin.Float.atan2](#5136938128350807734)
-+ [builtin.Float.atanh](#5136938127646147732)
-+ [builtin.Float.ceiling](#1551121269929607209)
-+ [builtin.Float.cos](#6236080694071027745)
-+ [builtin.Float.cosh](#7587023971936746048)
-+ [builtin.Float.eq](#3955470224344811605)
-+ [builtin.Float.exp](#6898406784075217825)
-+ [builtin.Float.floor](#2692965503719562280)
-+ [builtin.Float.fromText](#6953279692335390454)
-+ [builtin.Float.gt](#3954907248470293756)
-+ [builtin.Float.gteq](#4411481543035234364)
-+ [builtin.Float.log](#3865723260580586234)
-+ [builtin.Float.logBase](#4530143819663988751)
-+ [builtin.Float.lt](#3958003619278275487)
-+ [builtin.Float.lteq](#2733756467380513553)
-+ [builtin.Float.max](#4191397283512062386)
-+ [builtin.Float.min](#4193649191003207104)
-+ [builtin.Float.pow](#7772540479232982394)
-+ [builtin.Float.round](#5164601550643769386)
-+ [builtin.Float.sin](#6784258882680294130)
-+ [builtin.Float.sinh](#5114465450460178237)
-+ [builtin.Float.sqrt](#3006844548251627827)
-+ [builtin.Float.tan](#6463651653390709987)
-+ [builtin.Float.tanh](#2622273824455577212)
-+ [builtin.Float.toText](#5472733845676345443)
-+ [builtin.Float.truncate](#6620249028290991765)
-+ [builtin.Int.*](#7678513412945837829)
-+ [builtin.Int.+](#7678513412962615446)
-+ [builtin.Int.-](#7678513413063281152)
-+ [builtin.Int./](#7678513413029725930)
-+ [builtin.Int.eq](#286890207122685058)
-+ [builtin.Int.fromText](#2605328266357214385)
-+ [builtin.Int.gt](#286327231684385327)
-+ [builtin.Int.gteq](#4443646003836706775)
-+ [builtin.Int.increment](#4492545159745488926)
-+ [builtin.Int.isEven](#5860354258759007472)
-+ [builtin.Int.isOdd](#2004749947467123878)
-+ [builtin.Int.lt](#288860626701737284)
-+ [builtin.Int.lteq](#8107854729627495540)
-+ [builtin.Int.mod](#8528540646040731703)
-+ [builtin.Int.negate](#3427349749575356326)
-+ [builtin.Int.signum](#271321534207884539)
-+ [builtin.Int.toFloat](#8824157032649362736)
-+ [builtin.Int.toText](#4010181899793056558)
-+ [builtin.Int.truncate0](#6677640345051763925)
-+ [builtin.List.++](#5236575217993875114)
-+ [builtin.List.+:](#5236575217742210823)
-+ [builtin.List.:+](#5240797546657945841)
-+ [builtin.List.at](#5220248884211840439)
-+ [builtin.List.cons](#3218215275841582641)
-+ [builtin.List.drop](#6960031958305802619)
-+ [builtin.List.empty](#3759466093183593714)
-+ [builtin.List.size](#182222036945436445)
-+ [builtin.List.snoc](#1462192904774175589)
-+ [builtin.List.take](#2046166363049315087)
-+ [builtin.Nat.*](#8233780913006739267)
-+ [builtin.Nat.+](#8233780913023516908)
-+ [builtin.Nat./](#8233780913090627360)
-+ [builtin.Nat.drop](#6666954009483670701)
-+ [builtin.Nat.eq](#44926103473428492)
-+ [builtin.Nat.fromText](#3793588829404969923)
-+ [builtin.Nat.gt](#44363128135794435)
-+ [builtin.Nat.gteq](#9134621787487553209)
-+ [builtin.Nat.increment](#4236930810192511992)
-+ [builtin.Nat.isEven](#3900520292502394906)
-+ [builtin.Nat.isOdd](#758114094913232116)
-+ [builtin.Nat.lt](#42955684565481010)
-+ [builtin.Nat.lteq](#424627947256327770)
-+ [builtin.Nat.mod](#2062899351507102747)
-+ [builtin.Nat.sub](#6789138438195616163)
-+ [builtin.Nat.toFloat](#259798862059743502)
-+ [builtin.Nat.toInt](#150239851535598533)
-+ [builtin.Nat.toText](#4259136486915088056)
-+ [builtin.Text.!=](#2119487978337574965)
-+ [builtin.Text.++](#2122302863162890393)
-+ [builtin.Text.drop](#8695965007450597314)
-+ [builtin.Text.empty](#8791395855004492749)
-+ [builtin.Text.eq](#2136377287423688437)
-+ [builtin.Text.fromCharList](#2048127043727128039)
-+ [builtin.Text.gt](#2136940267693942474)
-+ [builtin.Text.gteq](#9076882437348111534)
-+ [builtin.Text.lt](#2138910687054885635)
-+ [builtin.Text.lteq](#8243119339081451619)
-+ [builtin.Text.size](#5648358163568095426)
-+ [builtin.Text.take](#310233313770299440)
-+ [builtin.Text.toCharList](#6276639646555068952)
-+ [builtin.Text.uncons](#4194242515504973073)
-+ [builtin.Text.unsnoc](#8969379615124675737)
-+ [builtin.Universal.<](#3386236405620793265)
-+ [builtin.Universal.<=](#882949649546020697)
-+ [builtin.Universal.==](#883231137340669836)
-+ [builtin.Universal.>](#3386236405587237999)
-+ [builtin.Universal.>=](#882386671607855687)
-+ [builtin.Universal.compare](#6047211208908913000)
-+ [builtin.io.accept](#5780356249220838646)
-+ [builtin.io.bracket](#273197597288505377)
-+ [builtin.io.clientSocket](#6484715477443538158)
-+ [builtin.io.closeFile](#7633658582192098709)
-+ [builtin.io.closeSocket](#1042192607371576594)
-+ [builtin.io.createDirectory](#4578011639312698856)
-+ [builtin.io.delay](#1967752300612507102)
-+ [builtin.io.directoryContents](#6300643757891534980)
-+ [builtin.io.fileExists](#3919592830815168480)
-+ [builtin.io.fork](#8198052712314241032)
-+ [builtin.io.getBuffering](#2997889282840951358)
-+ [builtin.io.getCurrentDirectory](#5217576300315404991)
-+ [builtin.io.getFileSize](#4343364927382523748)
-+ [builtin.io.getFileTimestamp](#2872064474408582958)
-+ [builtin.io.getLine](#2718061682066118451)
-+ [builtin.io.getTemporaryDirectory](#8848707940208832145)
-+ [builtin.io.getText](#28040709108292580)
-+ [builtin.io.isDirectory](#3312000152029229256)
-+ [builtin.io.isFileEOF](#8041870458305717153)
-+ [builtin.io.isFileOpen](#3971139512072931200)
-+ [builtin.io.isSeekable](#3828147807648221978)
-+ [builtin.io.kill](#6020908985915756148)
-+ [builtin.io.listen](#6549848982735788701)
-+ [builtin.io.openFile](#495323509234122002)
-+ [builtin.io.position](#840268562146786627)
-+ [builtin.io.printLine](#8364409705726615100)
-+ [builtin.io.putText](#2373629799488520059)
-+ [builtin.io.readLine](#9047492431551584650)
-+ [builtin.io.receive](#7641686498086925666)
-+ [builtin.io.removeDirectory](#8303178682758799108)
-+ [builtin.io.removeFile](#2467524584460185396)
-+ [builtin.io.renameDirectory](#5361785741542466158)
-+ [builtin.io.renameFile](#2810195704643154762)
-+ [builtin.io.rethrow](#5814593162789285776)
-+ [builtin.io.seek](#6181260182412569664)
-+ [builtin.io.send](#6183793577614475430)
-+ [builtin.io.serverSocket](#5076587535912172962)
-+ [builtin.io.setBuffering](#6887921679790598122)
-+ [builtin.io.setCurrentDirectory](#8557332659964056293)
-+ [builtin.io.stderr](#1137895461247182454)
-+ [builtin.io.stdin](#3244480646677181479)
-+ [builtin.io.stdout](#913825163455496275)
-+ [builtin.io.systemTime](#1891380862370288542)
-+ [builtin.links.isTest](#9109026890699064102)
-+ [exampleAdd](#4094206991234043373)
++ [builtin.Boolean.not](#c2h2cztfsynfryvyp7qwfplwky)
++ [builtin.Bytes.++](#dsdqcq2wtrpaavlhetvl7c7adi)
++ [builtin.Bytes.at](#aihynns7ohsnh35kj7yrhi5j6u)
++ [builtin.Bytes.drop](#pf4tf2umhjche2kl2vlpcagdra)
++ [builtin.Bytes.empty](#mi66atkrfp7kiv7ec2w6qqtnwi)
++ [builtin.Bytes.flatten](#3xrvwgcboaxf4jdjfoqrwvsage)
++ [builtin.Bytes.fromList](#iun2ojtyjks5nydmtwowzhhjdq)
++ [builtin.Bytes.size](#ir7qbmvsbln6yel46yjtrh66sa)
++ [builtin.Bytes.take](#r47t2mihcgdes24egfjfbcnz4q)
++ [builtin.Bytes.toList](#icfdhjo7uwqyqveq5eptvwico4)
++ [builtin.Char.fromNat](#mhqovdr4ilha2rsfhymdmrqk2i)
++ [builtin.Char.toNat](#m7jetk73l4pjbfsochrm3kkbgi)
++ [builtin.Debug.watch](#3pa62nthaookqaajpuxsgltzia)
++ [builtin.Float.*](#ckaq353ovuwyfcwwamxplolvc4)
++ [builtin.Float.+](#iiikq6ycdbvlqd4jk77quk5bv4)
++ [builtin.Float.-](#ifzlqmubxugf2vre65h4wymskm)
++ [builtin.Float./](#4morwa2v6jeqk6crtuqdne6muu)
++ [builtin.Float.abs](#uu3z2wqdteckn57vdp7bjdolqi)
++ [builtin.Float.acos](#fhh6jomrhbyxw6krqusn6pbnpq)
++ [builtin.Float.acosh](#rxpejgmsrerzpqot7kkwd3fffi)
++ [builtin.Float.asin](#qpx2zgiytyklgmfkrr3z5y2dtu)
++ [builtin.Float.asinh](#bsrmmfm6iyavaikyswttdvvdee)
++ [builtin.Float.atan](#egqt6onmpmqaepxyfau26oklmm)
++ [builtin.Float.atan2](#tvnpvxseggw5w67ygw6lt5owb4)
++ [builtin.Float.atanh](#ktka3rw45sxqvtidiijh73dhr4)
++ [builtin.Float.ceiling](#3gvorxka3dtsp2zvsxazogzewm)
++ [builtin.Float.cos](#2cexhzu73ysqacjynu27cyg5pq)
++ [builtin.Float.cosh](#523rfv74xjydtwxlbcojx3udhq)
++ [builtin.Float.eq](#r5um7fdvo4l57okdlrkpa7sulu)
++ [builtin.Float.exp](#neg3fvlj5ay23iwe3d74ree65u)
++ [builtin.Float.floor](#5yvhuurejwnn63a6uemcqtuqb4)
++ [builtin.Float.fromText](#njpkzlmyhjpakiqwklpqgp24mu)
++ [builtin.Float.gt](#6ojhnsntccaoqav2dssecmh4oq)
++ [builtin.Float.gteq](#b5bfymhuw2cgc6xwrjdyviynpa)
++ [builtin.Float.log](#tey4aimsh35cpafzq5ccypdpd4)
++ [builtin.Float.logBase](#e5jgf3b45rvx2urrkmk54nhgwi)
++ [builtin.Float.lt](#6xrbtfn36irrgwgupodhasbvr4)
++ [builtin.Float.lteq](#4beqmjnm4zrepbp5w3hnxs7rs4)
++ [builtin.Float.max](#a7f56xdf6kh6mte5vfst2vlq54)
++ [builtin.Float.min](#7fvsvbolshsfd7we6u5cdztaaa)
++ [builtin.Float.pow](#7yyyr46fcidl2rjnjvvynnj7vy)
++ [builtin.Float.round](#33ptta3goaxioyhx3lyez7djtm)
++ [builtin.Float.sin](#ius3xn6hye7e74nlevietms3ay)
++ [builtin.Float.sinh](#64ga3ikslpyhlmat5rtyswtjou)
++ [builtin.Float.sqrt](#h3n3ed7m33sz3hpe2cw3elkkdi)
++ [builtin.Float.tan](#ujsmb7ybxz26hdcota3jemts4m)
++ [builtin.Float.tanh](#ncxxaflyxx4rkv6xrcvxsbaiai)
++ [builtin.Float.toText](#3bg2sar3gex5iys2o4tyatxvgq)
++ [builtin.Float.truncate](#h3zyfscd26uaj23ixzy3ix3fym)
++ [builtin.Int.*](#plyks5hew4y4l3f4xhwpqcxzvy)
++ [builtin.Int.+](#iyezvv4p3gfcbcd7c2uqujhq6u)
++ [builtin.Int.-](#bqcyl6ygugjjiqmykusby5o37u)
++ [builtin.Int./](#nek7ak5qn6czjep3w75b3pgt2u)
++ [builtin.Int.eq](#ykwfahj3kku6zlsc4npp5n43ma)
++ [builtin.Int.fromText](#jjg4stpow7wu2omeiedspuioxy)
++ [builtin.Int.gt](#xfpgsjtgoyaws25n5ycijos6py)
++ [builtin.Int.gteq](#o4qmf3trfra4w2ti567bzjgpfa)
++ [builtin.Int.increment](#ih275oztnmrh2zs3pxoqq5itxi)
++ [builtin.Int.isEven](#b3lqe2ocfcro2x4ivjdchgnoqu)
++ [builtin.Int.isOdd](#xtpuhq3bw35pxxgtxcifmfbboq)
++ [builtin.Int.lt](#kxufgzkul2r5uv4lgnskgwyboy)
++ [builtin.Int.lteq](#wibgagndh22ob4ostb342epzhu)
++ [builtin.Int.mod](#x3qfsz24ywygfpe6qubzne6wte)
++ [builtin.Int.negate](#6vslwahsdibwbjh4sj6ueyocxy)
++ [builtin.Int.signum](#k4kxfiwxunlz47zghuaphoc3ue)
++ [builtin.Int.toFloat](#ijfri6gvzk4dn7bct7jdbdiusa)
++ [builtin.Int.toText](#6npppjz5xyavtovwo5jcbbjini)
++ [builtin.Int.truncate0](#l4s75wcizizglud6w44kn6be6q)
++ [builtin.List.++](#524xbomuupahng2su2oe373ume)
++ [builtin.List.+:](#cctppoenmeefbzeaz2sul5w4oe)
++ [builtin.List.:+](#tcn3qswkdicxxqykvepn3w7wvm)
++ [builtin.List.at](#4wahshum2pxkgtqqgggb22acyy)
++ [builtin.List.cons](#chqykx7mxxpcgrpn5da2iocj74)
++ [builtin.List.drop](#jl6htx4izb6ynece3aie77556a)
++ [builtin.List.empty](#nismqrazm7xa4qgplan6e5f2kq)
++ [builtin.List.size](#xbcy2sx5gwy24ekojhsnm4xr24)
++ [builtin.List.snoc](#5qclejdbatv6zx5j3abzmm72ae)
++ [builtin.List.take](#nhq5kv3kbj7xahvzhfs5kghdcq)
++ [builtin.Nat.*](#nraaqhzqfvzzfrtpb5sca4dzvi)
++ [builtin.Nat.+](#6w67lnlvh3am5yaommsgw664nm)
++ [builtin.Nat./](#pnqyp2kylp2z6l2j2xnux6irsi)
++ [builtin.Nat.drop](#me3sqtxd2fxxa5xu42wghdhnum)
++ [builtin.Nat.eq](#gp4grbhku4d33bu4orvuw5kl6e)
++ [builtin.Nat.fromText](#wsxo7mz3ebhkfmkr5k4ooh4un4)
++ [builtin.Nat.gt](#rygsu5ijggdlvfvrnvwrukthz4)
++ [builtin.Nat.gteq](#sxrfycj7zs477vik3v3i2afsnq)
++ [builtin.Nat.increment](#mnuuzytti3qmxq3k6febqf3yqu)
++ [builtin.Nat.isEven](#2f7pxoghvrw7cggumie7cvmha4)
++ [builtin.Nat.isOdd](#biw2tc5c5vtfkxe63bkkykbq3a)
++ [builtin.Nat.lt](#kpuqgpf5tvzdb2gctwqugcrceq)
++ [builtin.Nat.lteq](#j3krrh6bt2qkbrradrywasgq3u)
++ [builtin.Nat.mod](#6e2os4qlzrmfondxmppll6lmju)
++ [builtin.Nat.sub](#q74cprfdms5xjfkkdvmw44pdfy)
++ [builtin.Nat.toFloat](#npemsup6gookfoumocb3u4uhmy)
++ [builtin.Nat.toInt](#qmgq6rckkpyeo6r5kpg4ueqvcy)
++ [builtin.Nat.toText](#zgdxat5emr4pxmrxbojodefjwm)
++ [builtin.Text.!=](#kd43vfuqmiorzkebdblubbllq4)
++ [builtin.Text.++](#abh577hudd35dm7peu2tsncufm)
++ [builtin.Text.drop](#yymt7t6on5nqabxqme6da2cqca)
++ [builtin.Text.empty](#g4iaostrzsfeh3qwkotn2xw45e)
++ [builtin.Text.eq](#3tg3wkxfxidxu27mqshqjtmzgi)
++ [builtin.Text.fromCharList](#ltjdzob55lupv75n6yyge7egw4)
++ [builtin.Text.gt](#abcjtg4vflm6tfcigasdaqzymi)
++ [builtin.Text.gteq](#glmac5cdpcxy3zawkgeldn5mle)
++ [builtin.Text.lt](#7pbssfna2r3hlzry7k4fjwldca)
++ [builtin.Text.lteq](#c3rz5lzhpgg25tkfsz2rkzfubq)
++ [builtin.Text.size](#c4jugne74nssenleyuf2onbioq)
++ [builtin.Text.take](#tlhdqh6vqge2ni4ddxu4kygbcu)
++ [builtin.Text.toCharList](#xqfvxilp5dcsurqf4wpigzvjdq)
++ [builtin.Text.uncons](#6xn2wj5vyph7ldehxekxs4ytei)
++ [builtin.Text.unsnoc](#kvsjvwphe55lfvtzwgeqpmetqy)
++ [builtin.Universal.<](#ebm7pamijd7mp7yxuiiq5d463y)
++ [builtin.Universal.<=](#4pmgm7cte3uoxe7atysbo3bvea)
++ [builtin.Universal.==](#6vuxkkbimr6lzf2qagi7yte44q)
++ [builtin.Universal.>](#yaxd5gbkyewtzquaxyoa3jg5c4)
++ [builtin.Universal.>=](#sruxjzrnvvzxyz57rvrb4syz4q)
++ [builtin.Universal.compare](#23qbqytdu4fo5vwkr7maoc6exm)
++ [builtin.io.accept](#vjowrufdrhhfcqmks4qrijcihu)
++ [builtin.io.bracket](#axg4elk2s36qy7ysrq5c5n6k7a)
++ [builtin.io.clientSocket](#xw2enc22omwrchuoyvejt5febq)
++ [builtin.io.closeFile](#mqt7fexqkqlxdbptojybjifiqq)
++ [builtin.io.closeSocket](#qmzv4efab5psm2shi2bn6a5bcq)
++ [builtin.io.createDirectory](#fhk5ydc4b6xqd7pbjjarbck2hi)
++ [builtin.io.delay](#q7fgaals2lds5fstf2t2yvnyae)
++ [builtin.io.directoryContents](#hy637equk55yelj35hwja6m6ee)
++ [builtin.io.fileExists](#s7md4m2n7t52afwk2nwanmjpqe)
++ [builtin.io.fork](#h2gzuarwmmdnz4kd6oo5df4bae)
++ [builtin.io.getBuffering](#3fbwle3ipcnmlw4ult22gbxg7y)
++ [builtin.io.getCurrentDirectory](#rqm43xxg6b3ddn36ayenm35fxa)
++ [builtin.io.getFileSize](#hhz6ibvhdq4pys4j7wvex2przm)
++ [builtin.io.getFileTimestamp](#o6hweauasqwk5cjqkyvsugvhty)
++ [builtin.io.getLine](#mk4ndgj2d6eodhqrpqe65fhy5u)
++ [builtin.io.getTemporaryDirectory](#vwu6eccqsejthycgdky4kxpjge)
++ [builtin.io.getText](#fa4dqqjm2itqynoyaquveu7i3a)
++ [builtin.io.isDirectory](#jqttqucnfrfrycaabiulpfuw3e)
++ [builtin.io.isFileEOF](#jjtvnolpzz65oezz227kpimslq)
++ [builtin.io.isFileOpen](#ozkk6h4j6ozpixtwy5zkz2kuv4)
++ [builtin.io.isSeekable](#lo7p36lxc23wkwz6c6pgms5mcq)
++ [builtin.io.kill](#nfrgo6jof2izj3u3ncaelmrwzu)
++ [builtin.io.listen](#ndu7b5vin5q37fozed62mbz2wu)
++ [builtin.io.openFile](#tsuovfpui5e7vydv2un33b4zoq)
++ [builtin.io.position](#lhu7yb5u75thm2wyqcir5nuf3m)
++ [builtin.io.printLine](#l2us7xaoviro6qrkzdmqvv37ne)
++ [builtin.io.putText](#w7kske4o54rqkuuze4auz5h2uq)
++ [builtin.io.readLine](#r4ebki4zllpvmsok2vt3szghhy)
++ [builtin.io.receive](#ts6sa2kqm5shswselxksgpuxta)
++ [builtin.io.removeDirectory](#4msgotybpm445d7rompcaakdzq)
++ [builtin.io.removeFile](#fyrsdbzku2qsc56wra4qgqga5m)
++ [builtin.io.renameDirectory](#odycxdcvpceuvxb25pue2zas3i)
++ [builtin.io.renameFile](#y6isaaqg27geqskyd7q5tdf6uy)
++ [builtin.io.rethrow](#ubmisop4fjpfuds7cdbwxvexye)
++ [builtin.io.seek](#uzt2hfwtc6gva24fzejrm2czdu)
++ [builtin.io.send](#qqd4fpu3nzzthutde3cnoxvwzm)
++ [builtin.io.serverSocket](#h2jfs264soohpxw7tdrisbxvdm)
++ [builtin.io.setBuffering](#wapnynywrltx2lfajci3ka2s5m)
++ [builtin.io.setCurrentDirectory](#rr5bz3opnmpty4fjd22mjc5osa)
++ [builtin.io.stderr](#imqrap5ol6y3xmteqnyqmuvvpm)
++ [builtin.io.stdin](#v4licm4fuvnpceiw6fpk6t4xyu)
++ [builtin.io.stdout](#hiigled2r57v37kt72fxgkotly)
++ [builtin.io.systemTime](#3fcsrmet7pejps5cbwy23um54m)
++ [builtin.links.isTest](#qwzxbpefl5p5wnv4mfpgj7ymsy)
++ [exampleAdd](#g2ro366zpfmo4c23lzqx34fdmq)
 
 # Types
 
-<a name='6306107192279472826'/>
+<a name='e6f5zccjzbv5wuadb7npy2c2bm'/>
 
 ### builtin.Boolean
 
@@ -208,7 +208,7 @@
 <builtin>
 ```
 
-<a name='3897716605628038017'/>
+<a name='342jfmmocru2fc63h3437pb23y'/>
 
 ### builtin.Bytes
 
@@ -216,7 +216,7 @@
 <builtin>
 ```
 
-<a name='5245241711139589005'/>
+<a name='2vosqowpjxgzcmqp5m2ra6ue3y'/>
 
 ### builtin.Char
 
@@ -224,7 +224,7 @@
 <builtin>
 ```
 
-<a name='5572193597304070436'/>
+<a name='6heaozdhamjgez3zoae2wmnady'/>
 
 ### builtin.Either
 
@@ -232,7 +232,7 @@
 type builtin.Either a b = Left a | Right b
 ```
 
-<a name='617572644675272590'/>
+<a name='vjwrshr445vnu3i6d36urtcqjm'/>
 
 ### builtin.Float
 
@@ -240,7 +240,7 @@ type builtin.Either a b = Left a | Right b
 <builtin>
 ```
 
-<a name='3832676917859339683'/>
+<a name='xq7t7lxiwautwnliu57hpxnchy'/>
 
 ### builtin.Int
 
@@ -248,7 +248,7 @@ type builtin.Either a b = Left a | Right b
 <builtin>
 ```
 
-<a name='4432933224895344673'/>
+<a name='bd2emrysvxzwcuutmmtw2tvntu'/>
 
 ### builtin.IsTest
 
@@ -256,7 +256,7 @@ type builtin.Either a b = Left a | Right b
 unique type builtin.IsTest = IsTest
 ```
 
-<a name='1424777922347868611'/>
+<a name='k4nsssalrhfzc7aanjbsmqrkau'/>
 
 ### builtin.List
 
@@ -264,7 +264,7 @@ unique type builtin.IsTest = IsTest
 <builtin>
 ```
 
-<a name='2186573045580090773'/>
+<a name='5tpsxn4lzmxfaxjbtdvjxejel4'/>
 
 ### builtin.Nat
 
@@ -272,7 +272,7 @@ unique type builtin.IsTest = IsTest
 <builtin>
 ```
 
-<a name='5220643134797035825'/>
+<a name='vig25frxmfmnrlsxli5panwpxm'/>
 
 ### builtin.Optional
 
@@ -280,7 +280,7 @@ unique type builtin.IsTest = IsTest
 type builtin.Optional a = None | Some a
 ```
 
-<a name='1267204749295824727'/>
+<a name='abexuew7yqq64zq2ijkaglsiay'/>
 
 ### builtin.Request
 
@@ -288,7 +288,7 @@ type builtin.Optional a = None | Some a
 <builtin>
 ```
 
-<a name='8738896027400783533'/>
+<a name='uavoq4ps3owdbngjmmrfyyuaue'/>
 
 ### builtin.Test.Result
 
@@ -296,7 +296,7 @@ type builtin.Optional a = None | Some a
 unique type builtin.Test.Result = Fail builtin.Text | Ok builtin.Text
 ```
 
-<a name='4156348005617393268'/>
+<a name='xdofvxeowt755szvqpbhhj7mae'/>
 
 ### builtin.Text
 
@@ -304,7 +304,7 @@ unique type builtin.Test.Result = Fail builtin.Text | Ok builtin.Text
 <builtin>
 ```
 
-<a name='5573141728625805998'/>
+<a name='cunrr57yuxnklx7yz36gmqczsq'/>
 
 ### builtin.Tuple
 
@@ -312,7 +312,7 @@ unique type builtin.Test.Result = Fail builtin.Text | Ok builtin.Text
 type builtin.Tuple a b = Cons a b
 ```
 
-<a name='1276183637339978185'/>
+<a name='m3foedersy5skxta5ycythv6yy'/>
 
 ### builtin.Unit
 
@@ -320,7 +320,7 @@ type builtin.Tuple a b = Cons a b
 type builtin.Unit = Unit
 ```
 
-<a name='7639649842682908765'/>
+<a name='6un2h33oy6qhinpgpxa3mwbrw4'/>
 
 ### builtin.io.BufferMode
 
@@ -328,7 +328,7 @@ type builtin.Unit = Unit
 unique type builtin.io.BufferMode = Line | Block (builtin.Optional builtin.Nat)
 ```
 
-<a name='4800730452074110371'/>
+<a name='6oixfqlyjemavsg6skuzjarvyq'/>
 
 ### builtin.io.EpochTime
 
@@ -336,7 +336,7 @@ unique type builtin.io.BufferMode = Line | Block (builtin.Optional builtin.Nat)
 unique type builtin.io.EpochTime = EpochTime builtin.Nat
 ```
 
-<a name='6881305932018128677'/>
+<a name='uermdn3lvcg35ibrcb4yklmp7y'/>
 
 ### builtin.io.Error
 
@@ -344,7 +344,7 @@ unique type builtin.io.EpochTime = EpochTime builtin.Nat
 type builtin.io.Error = Error builtin.io.ErrorType builtin.Text
 ```
 
-<a name='631802764988078740'/>
+<a name='y76fv4jgawmnnzxq3bcknlv6su'/>
 
 ### builtin.io.ErrorDescription
 
@@ -352,7 +352,7 @@ type builtin.io.Error = Error builtin.io.ErrorType builtin.Text
 unique type builtin.io.ErrorDescription = ErrorDescription builtin.Text
 ```
 
-<a name='400363865334050740'/>
+<a name='hheh3cwsychsmuhslaqtbv7i4a'/>
 
 ### builtin.io.ErrorLocation
 
@@ -360,7 +360,7 @@ unique type builtin.io.ErrorDescription = ErrorDescription builtin.Text
 unique type builtin.io.ErrorLocation = ErrorLocation builtin.Text
 ```
 
-<a name='8823105272910210663'/>
+<a name='l5y3obnoooxx2vs7wygsex3ypu'/>
 
 ### builtin.io.ErrorType
 
@@ -376,7 +376,7 @@ unique type builtin.io.ErrorType
   | UserError
 ```
 
-<a name='8011563717472886547'/>
+<a name='yqk5q4wtwkbmpfpxc7a5pkmbae'/>
 
 ### builtin.io.FilePath
 
@@ -384,7 +384,7 @@ unique type builtin.io.ErrorType
 unique type builtin.io.FilePath = FilePath builtin.Text
 ```
 
-<a name='7000936550009132492'/>
+<a name='daizk3nwe4mdhbwfitufujb4wq'/>
 
 ### builtin.io.Handle
 
@@ -392,7 +392,7 @@ unique type builtin.io.FilePath = FilePath builtin.Text
 unique type builtin.io.Handle = Handle builtin.Text
 ```
 
-<a name='7685462072081011933'/>
+<a name='fwlsqgi3s655duzanzgk3gnfeu'/>
 
 ### builtin.io.HostName
 
@@ -400,7 +400,7 @@ unique type builtin.io.Handle = Handle builtin.Text
 unique type builtin.io.HostName = HostName builtin.Text
 ```
 
-<a name='4716768780565495378'/>
+<a name='wfvrhht3dbexc47ytfpufrm23m'/>
 
 ### builtin.io.IO
 
@@ -522,7 +522,7 @@ ability builtin.io.IO where
     ->{builtin.io.IO} builtin.Either builtin.io.Error ()
 ```
 
-<a name='1315077711476797533'/>
+<a name='cnr7zvu3qhqv6fd7g5thu7xw4m'/>
 
 ### builtin.io.Mode
 
@@ -530,7 +530,7 @@ ability builtin.io.IO where
 type builtin.io.Mode = Read | Write | Append | ReadWrite
 ```
 
-<a name='4064744426201103269'/>
+<a name='2hupcpprdmvqcrlaavm2ujzw3y'/>
 
 ### builtin.io.SeekMode
 
@@ -538,7 +538,7 @@ type builtin.io.Mode = Read | Write | Append | ReadWrite
 unique type builtin.io.SeekMode = Absolute | Relative | FromEnd
 ```
 
-<a name='6391572444526865715'/>
+<a name='pmf2taqtjab5ezvsf4d5zgtvhy'/>
 
 ### builtin.io.ServiceName
 
@@ -546,7 +546,7 @@ unique type builtin.io.SeekMode = Absolute | Relative | FromEnd
 unique type builtin.io.ServiceName = ServiceName builtin.Text
 ```
 
-<a name='5549792368903176339'/>
+<a name='qef2a2ahsgx5ko5yt6ktd32uyu'/>
 
 ### builtin.io.Socket
 
@@ -554,7 +554,7 @@ unique type builtin.io.ServiceName = ServiceName builtin.Text
 unique type builtin.io.Socket = Socket builtin.Text
 ```
 
-<a name='1674608298260786667'/>
+<a name='tqdsdwgxebjhavmak5sfy3f32y'/>
 
 ### builtin.io.ThreadId
 
@@ -565,7 +565,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 
 # Terms
 
-<a name='7303144659369981397'/>
+<a name='c2h2cztfsynfryvyp7qwfplwky'/>
 
 ### builtin.Boolean.not
 
@@ -573,7 +573,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='1439477776726142242'/>
+<a name='dsdqcq2wtrpaavlhetvl7c7adi'/>
 
 ### builtin.Bytes.++
 
@@ -581,7 +581,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='1418647627022271505'/>
+<a name='aihynns7ohsnh35kj7yrhi5j6u'/>
 
 ### builtin.Bytes.at
 
@@ -589,7 +589,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='3187582489422264371'/>
+<a name='pf4tf2umhjche2kl2vlpcagdra'/>
 
 ### builtin.Bytes.drop
 
@@ -597,7 +597,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='8951136362131366022'/>
+<a name='mi66atkrfp7kiv7ec2w6qqtnwi'/>
 
 ### builtin.Bytes.empty
 
@@ -605,7 +605,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='1101531528408829737'/>
+<a name='3xrvwgcboaxf4jdjfoqrwvsage'/>
 
 ### builtin.Bytes.flatten
 
@@ -613,7 +613,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='2202563138110542798'/>
+<a name='iun2ojtyjks5nydmtwowzhhjdq'/>
 
 ### builtin.Bytes.fromList
 
@@ -621,7 +621,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='3587442715395550367'/>
+<a name='ir7qbmvsbln6yel46yjtrh66sa'/>
 
 ### builtin.Bytes.size
 
@@ -629,7 +629,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='33427196685056485'/>
+<a name='r47t2mihcgdes24egfjfbcnz4q'/>
 
 ### builtin.Bytes.take
 
@@ -637,7 +637,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='4306366734554417779'/>
+<a name='icfdhjo7uwqyqveq5eptvwico4'/>
 
 ### builtin.Bytes.toList
 
@@ -645,7 +645,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='1587873577456361474'/>
+<a name='mhqovdr4ilha2rsfhymdmrqk2i'/>
 
 ### builtin.Char.fromNat
 
@@ -653,7 +653,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='5339163095314859991'/>
+<a name='m7jetk73l4pjbfsochrm3kkbgi'/>
 
 ### builtin.Char.toNat
 
@@ -661,7 +661,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='5132912380557838624'/>
+<a name='3pa62nthaookqaajpuxsgltzia'/>
 
 ### builtin.Debug.watch
 
@@ -669,7 +669,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='7583365280543984584'/>
+<a name='ckaq353ovuwyfcwwamxplolvc4'/>
 
 ### builtin.Float.*
 
@@ -677,7 +677,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='7583365280527206971'/>
+<a name='iiikq6ycdbvlqd4jk77quk5bv4'/>
 
 ### builtin.Float.+
 
@@ -685,7 +685,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='7583365280493651713'/>
+<a name='ifzlqmubxugf2vre65h4wymskm'/>
 
 ### builtin.Float.-
 
@@ -693,7 +693,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='7583365280460096487'/>
+<a name='4morwa2v6jeqk6crtuqdne6muu'/>
 
 ### builtin.Float./
 
@@ -701,7 +701,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='5517456903114460232'/>
+<a name='uu3z2wqdteckn57vdp7bjdolqi'/>
 
 ### builtin.Float.abs
 
@@ -709,7 +709,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='6279795193250302089'/>
+<a name='fhh6jomrhbyxw6krqusn6pbnpq'/>
 
 ### builtin.Float.acos
 
@@ -717,7 +717,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='6472644911537236324'/>
+<a name='rxpejgmsrerzpqot7kkwd3fffi'/>
 
 ### builtin.Float.acosh
 
@@ -725,7 +725,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='871405957563439646'/>
+<a name='qpx2zgiytyklgmfkrr3z5y2dtu'/>
 
 ### builtin.Float.asin
 
@@ -733,7 +733,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='2560758465141952933'/>
+<a name='bsrmmfm6iyavaikyswttdvvdee'/>
 
 ### builtin.Float.asinh
 
@@ -741,7 +741,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='846477482777860551'/>
+<a name='egqt6onmpmqaepxyfau26oklmm'/>
 
 ### builtin.Float.atan
 
@@ -749,7 +749,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='5136938128350807734'/>
+<a name='tvnpvxseggw5w67ygw6lt5owb4'/>
 
 ### builtin.Float.atan2
 
@@ -757,7 +757,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='5136938127646147732'/>
+<a name='ktka3rw45sxqvtidiijh73dhr4'/>
 
 ### builtin.Float.atanh
 
@@ -765,7 +765,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='1551121269929607209'/>
+<a name='3gvorxka3dtsp2zvsxazogzewm'/>
 
 ### builtin.Float.ceiling
 
@@ -773,7 +773,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='6236080694071027745'/>
+<a name='2cexhzu73ysqacjynu27cyg5pq'/>
 
 ### builtin.Float.cos
 
@@ -781,7 +781,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='7587023971936746048'/>
+<a name='523rfv74xjydtwxlbcojx3udhq'/>
 
 ### builtin.Float.cosh
 
@@ -789,7 +789,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='3955470224344811605'/>
+<a name='r5um7fdvo4l57okdlrkpa7sulu'/>
 
 ### builtin.Float.eq
 
@@ -797,7 +797,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='6898406784075217825'/>
+<a name='neg3fvlj5ay23iwe3d74ree65u'/>
 
 ### builtin.Float.exp
 
@@ -805,7 +805,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='2692965503719562280'/>
+<a name='5yvhuurejwnn63a6uemcqtuqb4'/>
 
 ### builtin.Float.floor
 
@@ -813,7 +813,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='6953279692335390454'/>
+<a name='njpkzlmyhjpakiqwklpqgp24mu'/>
 
 ### builtin.Float.fromText
 
@@ -821,7 +821,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='3954907248470293756'/>
+<a name='6ojhnsntccaoqav2dssecmh4oq'/>
 
 ### builtin.Float.gt
 
@@ -829,7 +829,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='4411481543035234364'/>
+<a name='b5bfymhuw2cgc6xwrjdyviynpa'/>
 
 ### builtin.Float.gteq
 
@@ -837,7 +837,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='3865723260580586234'/>
+<a name='tey4aimsh35cpafzq5ccypdpd4'/>
 
 ### builtin.Float.log
 
@@ -845,7 +845,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='4530143819663988751'/>
+<a name='e5jgf3b45rvx2urrkmk54nhgwi'/>
 
 ### builtin.Float.logBase
 
@@ -853,7 +853,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='3958003619278275487'/>
+<a name='6xrbtfn36irrgwgupodhasbvr4'/>
 
 ### builtin.Float.lt
 
@@ -861,7 +861,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='2733756467380513553'/>
+<a name='4beqmjnm4zrepbp5w3hnxs7rs4'/>
 
 ### builtin.Float.lteq
 
@@ -869,7 +869,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='4191397283512062386'/>
+<a name='a7f56xdf6kh6mte5vfst2vlq54'/>
 
 ### builtin.Float.max
 
@@ -877,7 +877,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='4193649191003207104'/>
+<a name='7fvsvbolshsfd7we6u5cdztaaa'/>
 
 ### builtin.Float.min
 
@@ -885,7 +885,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='7772540479232982394'/>
+<a name='7yyyr46fcidl2rjnjvvynnj7vy'/>
 
 ### builtin.Float.pow
 
@@ -893,7 +893,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='5164601550643769386'/>
+<a name='33ptta3goaxioyhx3lyez7djtm'/>
 
 ### builtin.Float.round
 
@@ -901,7 +901,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='6784258882680294130'/>
+<a name='ius3xn6hye7e74nlevietms3ay'/>
 
 ### builtin.Float.sin
 
@@ -909,7 +909,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='5114465450460178237'/>
+<a name='64ga3ikslpyhlmat5rtyswtjou'/>
 
 ### builtin.Float.sinh
 
@@ -917,7 +917,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='3006844548251627827'/>
+<a name='h3n3ed7m33sz3hpe2cw3elkkdi'/>
 
 ### builtin.Float.sqrt
 
@@ -925,7 +925,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='6463651653390709987'/>
+<a name='ujsmb7ybxz26hdcota3jemts4m'/>
 
 ### builtin.Float.tan
 
@@ -933,7 +933,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='2622273824455577212'/>
+<a name='ncxxaflyxx4rkv6xrcvxsbaiai'/>
 
 ### builtin.Float.tanh
 
@@ -941,7 +941,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='5472733845676345443'/>
+<a name='3bg2sar3gex5iys2o4tyatxvgq'/>
 
 ### builtin.Float.toText
 
@@ -949,7 +949,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='6620249028290991765'/>
+<a name='h3zyfscd26uaj23ixzy3ix3fym'/>
 
 ### builtin.Float.truncate
 
@@ -957,7 +957,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='7678513412945837829'/>
+<a name='plyks5hew4y4l3f4xhwpqcxzvy'/>
 
 ### builtin.Int.*
 
@@ -965,7 +965,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='7678513412962615446'/>
+<a name='iyezvv4p3gfcbcd7c2uqujhq6u'/>
 
 ### builtin.Int.+
 
@@ -973,7 +973,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='7678513413063281152'/>
+<a name='bqcyl6ygugjjiqmykusby5o37u'/>
 
 ### builtin.Int.-
 
@@ -981,7 +981,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='7678513413029725930'/>
+<a name='nek7ak5qn6czjep3w75b3pgt2u'/>
 
 ### builtin.Int./
 
@@ -989,7 +989,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='286890207122685058'/>
+<a name='ykwfahj3kku6zlsc4npp5n43ma'/>
 
 ### builtin.Int.eq
 
@@ -997,7 +997,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='2605328266357214385'/>
+<a name='jjg4stpow7wu2omeiedspuioxy'/>
 
 ### builtin.Int.fromText
 
@@ -1005,7 +1005,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='286327231684385327'/>
+<a name='xfpgsjtgoyaws25n5ycijos6py'/>
 
 ### builtin.Int.gt
 
@@ -1013,7 +1013,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='4443646003836706775'/>
+<a name='o4qmf3trfra4w2ti567bzjgpfa'/>
 
 ### builtin.Int.gteq
 
@@ -1021,7 +1021,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='4492545159745488926'/>
+<a name='ih275oztnmrh2zs3pxoqq5itxi'/>
 
 ### builtin.Int.increment
 
@@ -1029,7 +1029,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='5860354258759007472'/>
+<a name='b3lqe2ocfcro2x4ivjdchgnoqu'/>
 
 ### builtin.Int.isEven
 
@@ -1037,7 +1037,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='2004749947467123878'/>
+<a name='xtpuhq3bw35pxxgtxcifmfbboq'/>
 
 ### builtin.Int.isOdd
 
@@ -1045,7 +1045,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='288860626701737284'/>
+<a name='kxufgzkul2r5uv4lgnskgwyboy'/>
 
 ### builtin.Int.lt
 
@@ -1053,7 +1053,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='8107854729627495540'/>
+<a name='wibgagndh22ob4ostb342epzhu'/>
 
 ### builtin.Int.lteq
 
@@ -1061,7 +1061,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='8528540646040731703'/>
+<a name='x3qfsz24ywygfpe6qubzne6wte'/>
 
 ### builtin.Int.mod
 
@@ -1069,7 +1069,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='3427349749575356326'/>
+<a name='6vslwahsdibwbjh4sj6ueyocxy'/>
 
 ### builtin.Int.negate
 
@@ -1077,7 +1077,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='271321534207884539'/>
+<a name='k4kxfiwxunlz47zghuaphoc3ue'/>
 
 ### builtin.Int.signum
 
@@ -1085,7 +1085,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='8824157032649362736'/>
+<a name='ijfri6gvzk4dn7bct7jdbdiusa'/>
 
 ### builtin.Int.toFloat
 
@@ -1093,7 +1093,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='4010181899793056558'/>
+<a name='6npppjz5xyavtovwo5jcbbjini'/>
 
 ### builtin.Int.toText
 
@@ -1101,7 +1101,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='6677640345051763925'/>
+<a name='l4s75wcizizglud6w44kn6be6q'/>
 
 ### builtin.Int.truncate0
 
@@ -1109,7 +1109,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='5236575217993875114'/>
+<a name='524xbomuupahng2su2oe373ume'/>
 
 ### builtin.List.++
 
@@ -1117,7 +1117,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='5236575217742210823'/>
+<a name='cctppoenmeefbzeaz2sul5w4oe'/>
 
 ### builtin.List.+:
 
@@ -1125,7 +1125,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='5240797546657945841'/>
+<a name='tcn3qswkdicxxqykvepn3w7wvm'/>
 
 ### builtin.List.:+
 
@@ -1133,7 +1133,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='5220248884211840439'/>
+<a name='4wahshum2pxkgtqqgggb22acyy'/>
 
 ### builtin.List.at
 
@@ -1141,7 +1141,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='3218215275841582641'/>
+<a name='chqykx7mxxpcgrpn5da2iocj74'/>
 
 ### builtin.List.cons
 
@@ -1149,7 +1149,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='6960031958305802619'/>
+<a name='jl6htx4izb6ynece3aie77556a'/>
 
 ### builtin.List.drop
 
@@ -1157,7 +1157,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='3759466093183593714'/>
+<a name='nismqrazm7xa4qgplan6e5f2kq'/>
 
 ### builtin.List.empty
 
@@ -1165,7 +1165,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='182222036945436445'/>
+<a name='xbcy2sx5gwy24ekojhsnm4xr24'/>
 
 ### builtin.List.size
 
@@ -1173,7 +1173,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='1462192904774175589'/>
+<a name='5qclejdbatv6zx5j3abzmm72ae'/>
 
 ### builtin.List.snoc
 
@@ -1181,7 +1181,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='2046166363049315087'/>
+<a name='nhq5kv3kbj7xahvzhfs5kghdcq'/>
 
 ### builtin.List.take
 
@@ -1189,7 +1189,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='8233780913006739267'/>
+<a name='nraaqhzqfvzzfrtpb5sca4dzvi'/>
 
 ### builtin.Nat.*
 
@@ -1197,7 +1197,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='8233780913023516908'/>
+<a name='6w67lnlvh3am5yaommsgw664nm'/>
 
 ### builtin.Nat.+
 
@@ -1205,7 +1205,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='8233780913090627360'/>
+<a name='pnqyp2kylp2z6l2j2xnux6irsi'/>
 
 ### builtin.Nat./
 
@@ -1213,7 +1213,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='6666954009483670701'/>
+<a name='me3sqtxd2fxxa5xu42wghdhnum'/>
 
 ### builtin.Nat.drop
 
@@ -1221,7 +1221,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='44926103473428492'/>
+<a name='gp4grbhku4d33bu4orvuw5kl6e'/>
 
 ### builtin.Nat.eq
 
@@ -1229,7 +1229,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='3793588829404969923'/>
+<a name='wsxo7mz3ebhkfmkr5k4ooh4un4'/>
 
 ### builtin.Nat.fromText
 
@@ -1237,7 +1237,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='44363128135794435'/>
+<a name='rygsu5ijggdlvfvrnvwrukthz4'/>
 
 ### builtin.Nat.gt
 
@@ -1245,7 +1245,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='9134621787487553209'/>
+<a name='sxrfycj7zs477vik3v3i2afsnq'/>
 
 ### builtin.Nat.gteq
 
@@ -1253,7 +1253,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='4236930810192511992'/>
+<a name='mnuuzytti3qmxq3k6febqf3yqu'/>
 
 ### builtin.Nat.increment
 
@@ -1261,7 +1261,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='3900520292502394906'/>
+<a name='2f7pxoghvrw7cggumie7cvmha4'/>
 
 ### builtin.Nat.isEven
 
@@ -1269,7 +1269,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='758114094913232116'/>
+<a name='biw2tc5c5vtfkxe63bkkykbq3a'/>
 
 ### builtin.Nat.isOdd
 
@@ -1277,7 +1277,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='42955684565481010'/>
+<a name='kpuqgpf5tvzdb2gctwqugcrceq'/>
 
 ### builtin.Nat.lt
 
@@ -1285,7 +1285,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='424627947256327770'/>
+<a name='j3krrh6bt2qkbrradrywasgq3u'/>
 
 ### builtin.Nat.lteq
 
@@ -1293,7 +1293,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='2062899351507102747'/>
+<a name='6e2os4qlzrmfondxmppll6lmju'/>
 
 ### builtin.Nat.mod
 
@@ -1301,7 +1301,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='6789138438195616163'/>
+<a name='q74cprfdms5xjfkkdvmw44pdfy'/>
 
 ### builtin.Nat.sub
 
@@ -1309,7 +1309,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='259798862059743502'/>
+<a name='npemsup6gookfoumocb3u4uhmy'/>
 
 ### builtin.Nat.toFloat
 
@@ -1317,7 +1317,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='150239851535598533'/>
+<a name='qmgq6rckkpyeo6r5kpg4ueqvcy'/>
 
 ### builtin.Nat.toInt
 
@@ -1325,7 +1325,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='4259136486915088056'/>
+<a name='zgdxat5emr4pxmrxbojodefjwm'/>
 
 ### builtin.Nat.toText
 
@@ -1333,7 +1333,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='2119487978337574965'/>
+<a name='kd43vfuqmiorzkebdblubbllq4'/>
 
 ### builtin.Text.!=
 
@@ -1341,7 +1341,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='2122302863162890393'/>
+<a name='abh577hudd35dm7peu2tsncufm'/>
 
 ### builtin.Text.++
 
@@ -1349,7 +1349,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='8695965007450597314'/>
+<a name='yymt7t6on5nqabxqme6da2cqca'/>
 
 ### builtin.Text.drop
 
@@ -1357,7 +1357,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='8791395855004492749'/>
+<a name='g4iaostrzsfeh3qwkotn2xw45e'/>
 
 ### builtin.Text.empty
 
@@ -1365,7 +1365,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='2136377287423688437'/>
+<a name='3tg3wkxfxidxu27mqshqjtmzgi'/>
 
 ### builtin.Text.eq
 
@@ -1373,7 +1373,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='2048127043727128039'/>
+<a name='ltjdzob55lupv75n6yyge7egw4'/>
 
 ### builtin.Text.fromCharList
 
@@ -1381,7 +1381,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='2136940267693942474'/>
+<a name='abcjtg4vflm6tfcigasdaqzymi'/>
 
 ### builtin.Text.gt
 
@@ -1389,7 +1389,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='9076882437348111534'/>
+<a name='glmac5cdpcxy3zawkgeldn5mle'/>
 
 ### builtin.Text.gteq
 
@@ -1397,7 +1397,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='2138910687054885635'/>
+<a name='7pbssfna2r3hlzry7k4fjwldca'/>
 
 ### builtin.Text.lt
 
@@ -1405,7 +1405,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='8243119339081451619'/>
+<a name='c3rz5lzhpgg25tkfsz2rkzfubq'/>
 
 ### builtin.Text.lteq
 
@@ -1413,7 +1413,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='5648358163568095426'/>
+<a name='c4jugne74nssenleyuf2onbioq'/>
 
 ### builtin.Text.size
 
@@ -1421,7 +1421,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='310233313770299440'/>
+<a name='tlhdqh6vqge2ni4ddxu4kygbcu'/>
 
 ### builtin.Text.take
 
@@ -1429,7 +1429,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='6276639646555068952'/>
+<a name='xqfvxilp5dcsurqf4wpigzvjdq'/>
 
 ### builtin.Text.toCharList
 
@@ -1437,7 +1437,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='4194242515504973073'/>
+<a name='6xn2wj5vyph7ldehxekxs4ytei'/>
 
 ### builtin.Text.uncons
 
@@ -1445,7 +1445,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='8969379615124675737'/>
+<a name='kvsjvwphe55lfvtzwgeqpmetqy'/>
 
 ### builtin.Text.unsnoc
 
@@ -1453,7 +1453,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='3386236405620793265'/>
+<a name='ebm7pamijd7mp7yxuiiq5d463y'/>
 
 ### builtin.Universal.<
 
@@ -1461,7 +1461,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='882949649546020697'/>
+<a name='4pmgm7cte3uoxe7atysbo3bvea'/>
 
 ### builtin.Universal.<=
 
@@ -1469,7 +1469,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='883231137340669836'/>
+<a name='6vuxkkbimr6lzf2qagi7yte44q'/>
 
 ### builtin.Universal.==
 
@@ -1477,7 +1477,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='3386236405587237999'/>
+<a name='yaxd5gbkyewtzquaxyoa3jg5c4'/>
 
 ### builtin.Universal.>
 
@@ -1485,7 +1485,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='882386671607855687'/>
+<a name='sruxjzrnvvzxyz57rvrb4syz4q'/>
 
 ### builtin.Universal.>=
 
@@ -1493,7 +1493,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='6047211208908913000'/>
+<a name='23qbqytdu4fo5vwkr7maoc6exm'/>
 
 ### builtin.Universal.compare
 
@@ -1501,7 +1501,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 <builtin>
 ```
 
-<a name='5780356249220838646'/>
+<a name='vjowrufdrhhfcqmks4qrijcihu'/>
 
 ### builtin.io.accept
 
@@ -1509,7 +1509,7 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 builtin.io.accept s = builtin.io.rethrow (builtin.io.IO.accept_ s)
 ```
 
-<a name='273197597288505377'/>
+<a name='axg4elk2s36qy7ysrq5c5n6k7a'/>
 
 ### builtin.io.bracket
 
@@ -1518,7 +1518,7 @@ builtin.io.bracket acquire release what =
   builtin.io.rethrow (builtin.io.IO.bracket_ acquire release what)
 ```
 
-<a name='6484715477443538158'/>
+<a name='xw2enc22omwrchuoyvejt5febq'/>
 
 ### builtin.io.clientSocket
 
@@ -1527,7 +1527,7 @@ builtin.io.clientSocket host service =
   builtin.io.rethrow (builtin.io.IO.clientSocket_ host service)
 ```
 
-<a name='7633658582192098709'/>
+<a name='mqt7fexqkqlxdbptojybjifiqq'/>
 
 ### builtin.io.closeFile
 
@@ -1535,7 +1535,7 @@ builtin.io.clientSocket host service =
 builtin.io.closeFile f = builtin.io.rethrow (builtin.io.IO.closeFile_ f)
 ```
 
-<a name='1042192607371576594'/>
+<a name='qmzv4efab5psm2shi2bn6a5bcq'/>
 
 ### builtin.io.closeSocket
 
@@ -1543,7 +1543,7 @@ builtin.io.closeFile f = builtin.io.rethrow (builtin.io.IO.closeFile_ f)
 builtin.io.closeSocket s = builtin.io.rethrow (builtin.io.IO.closeSocket_ s)
 ```
 
-<a name='4578011639312698856'/>
+<a name='fhk5ydc4b6xqd7pbjjarbck2hi'/>
 
 ### builtin.io.createDirectory
 
@@ -1552,7 +1552,7 @@ builtin.io.createDirectory d =
   builtin.io.rethrow (builtin.io.IO.createDirectory_ d)
 ```
 
-<a name='1967752300612507102'/>
+<a name='q7fgaals2lds5fstf2t2yvnyae'/>
 
 ### builtin.io.delay
 
@@ -1560,7 +1560,7 @@ builtin.io.createDirectory d =
 builtin.io.delay n = builtin.io.rethrow (builtin.io.IO.delay_ n)
 ```
 
-<a name='6300643757891534980'/>
+<a name='hy637equk55yelj35hwja6m6ee'/>
 
 ### builtin.io.directoryContents
 
@@ -1569,7 +1569,7 @@ builtin.io.directoryContents d =
   builtin.io.rethrow (builtin.io.IO.directoryContents_ d)
 ```
 
-<a name='3919592830815168480'/>
+<a name='s7md4m2n7t52afwk2nwanmjpqe'/>
 
 ### builtin.io.fileExists
 
@@ -1577,7 +1577,7 @@ builtin.io.directoryContents d =
 builtin.io.fileExists d = builtin.io.rethrow (builtin.io.IO.fileExists_ d)
 ```
 
-<a name='8198052712314241032'/>
+<a name='h2gzuarwmmdnz4kd6oo5df4bae'/>
 
 ### builtin.io.fork
 
@@ -1585,7 +1585,7 @@ builtin.io.fileExists d = builtin.io.rethrow (builtin.io.IO.fileExists_ d)
 builtin.io.fork a = builtin.io.rethrow (builtin.io.IO.fork_ a)
 ```
 
-<a name='2997889282840951358'/>
+<a name='3fbwle3ipcnmlw4ult22gbxg7y'/>
 
 ### builtin.io.getBuffering
 
@@ -1593,7 +1593,7 @@ builtin.io.fork a = builtin.io.rethrow (builtin.io.IO.fork_ a)
 builtin.io.getBuffering h = builtin.io.rethrow (builtin.io.IO.getBuffering_ h)
 ```
 
-<a name='5217576300315404991'/>
+<a name='rqm43xxg6b3ddn36ayenm35fxa'/>
 
 ### builtin.io.getCurrentDirectory
 
@@ -1603,7 +1603,7 @@ builtin.io.getCurrentDirectory () =
   builtin.io.rethrow builtin.io.IO.getCurrentDirectory_
 ```
 
-<a name='4343364927382523748'/>
+<a name='hhz6ibvhdq4pys4j7wvex2przm'/>
 
 ### builtin.io.getFileSize
 
@@ -1611,7 +1611,7 @@ builtin.io.getCurrentDirectory () =
 builtin.io.getFileSize d = builtin.io.rethrow (builtin.io.IO.getFileSize_ d)
 ```
 
-<a name='2872064474408582958'/>
+<a name='o6hweauasqwk5cjqkyvsugvhty'/>
 
 ### builtin.io.getFileTimestamp
 
@@ -1620,7 +1620,7 @@ builtin.io.getFileTimestamp d =
   builtin.io.rethrow (builtin.io.IO.getFileTimestamp_ d)
 ```
 
-<a name='2718061682066118451'/>
+<a name='mk4ndgj2d6eodhqrpqe65fhy5u'/>
 
 ### builtin.io.getLine
 
@@ -1628,7 +1628,7 @@ builtin.io.getFileTimestamp d =
 builtin.io.getLine h = builtin.io.rethrow (builtin.io.IO.getLine_ h)
 ```
 
-<a name='8848707940208832145'/>
+<a name='vwu6eccqsejthycgdky4kxpjge'/>
 
 ### builtin.io.getTemporaryDirectory
 
@@ -1638,7 +1638,7 @@ builtin.io.getTemporaryDirectory () =
   builtin.io.rethrow builtin.io.IO.getTemporaryDirectory_
 ```
 
-<a name='28040709108292580'/>
+<a name='fa4dqqjm2itqynoyaquveu7i3a'/>
 
 ### builtin.io.getText
 
@@ -1646,7 +1646,7 @@ builtin.io.getTemporaryDirectory () =
 builtin.io.getText h = builtin.io.rethrow (builtin.io.IO.getText_ h)
 ```
 
-<a name='3312000152029229256'/>
+<a name='jqttqucnfrfrycaabiulpfuw3e'/>
 
 ### builtin.io.isDirectory
 
@@ -1654,7 +1654,7 @@ builtin.io.getText h = builtin.io.rethrow (builtin.io.IO.getText_ h)
 builtin.io.isDirectory d = builtin.io.rethrow (builtin.io.IO.isDirectory_ d)
 ```
 
-<a name='8041870458305717153'/>
+<a name='jjtvnolpzz65oezz227kpimslq'/>
 
 ### builtin.io.isFileEOF
 
@@ -1662,7 +1662,7 @@ builtin.io.isDirectory d = builtin.io.rethrow (builtin.io.IO.isDirectory_ d)
 builtin.io.isFileEOF h = builtin.io.rethrow (builtin.io.IO.isFileEOF_ h)
 ```
 
-<a name='3971139512072931200'/>
+<a name='ozkk6h4j6ozpixtwy5zkz2kuv4'/>
 
 ### builtin.io.isFileOpen
 
@@ -1670,7 +1670,7 @@ builtin.io.isFileEOF h = builtin.io.rethrow (builtin.io.IO.isFileEOF_ h)
 builtin.io.isFileOpen h = builtin.io.rethrow (builtin.io.IO.isFileOpen_ h)
 ```
 
-<a name='3828147807648221978'/>
+<a name='lo7p36lxc23wkwz6c6pgms5mcq'/>
 
 ### builtin.io.isSeekable
 
@@ -1678,7 +1678,7 @@ builtin.io.isFileOpen h = builtin.io.rethrow (builtin.io.IO.isFileOpen_ h)
 builtin.io.isSeekable h = builtin.io.rethrow (builtin.io.IO.isSeekable_ h)
 ```
 
-<a name='6020908985915756148'/>
+<a name='nfrgo6jof2izj3u3ncaelmrwzu'/>
 
 ### builtin.io.kill
 
@@ -1686,7 +1686,7 @@ builtin.io.isSeekable h = builtin.io.rethrow (builtin.io.IO.isSeekable_ h)
 builtin.io.kill t = builtin.io.rethrow (builtin.io.IO.kill_ t)
 ```
 
-<a name='6549848982735788701'/>
+<a name='ndu7b5vin5q37fozed62mbz2wu'/>
 
 ### builtin.io.listen
 
@@ -1694,7 +1694,7 @@ builtin.io.kill t = builtin.io.rethrow (builtin.io.IO.kill_ t)
 builtin.io.listen s = builtin.io.rethrow (builtin.io.IO.listen_ s)
 ```
 
-<a name='495323509234122002'/>
+<a name='tsuovfpui5e7vydv2un33b4zoq'/>
 
 ### builtin.io.openFile
 
@@ -1702,7 +1702,7 @@ builtin.io.listen s = builtin.io.rethrow (builtin.io.IO.listen_ s)
 builtin.io.openFile f m = builtin.io.rethrow (builtin.io.IO.openFile_ f m)
 ```
 
-<a name='840268562146786627'/>
+<a name='lhu7yb5u75thm2wyqcir5nuf3m'/>
 
 ### builtin.io.position
 
@@ -1710,7 +1710,7 @@ builtin.io.openFile f m = builtin.io.rethrow (builtin.io.IO.openFile_ f m)
 builtin.io.position h = builtin.io.rethrow (builtin.io.IO.position_ h)
 ```
 
-<a name='8364409705726615100'/>
+<a name='l2us7xaoviro6qrkzdmqvv37ne'/>
 
 ### builtin.io.printLine
 
@@ -1721,7 +1721,7 @@ builtin.io.printLine t =
   putText stdout "\n"
 ```
 
-<a name='2373629799488520059'/>
+<a name='w7kske4o54rqkuuze4auz5h2uq'/>
 
 ### builtin.io.putText
 
@@ -1729,7 +1729,7 @@ builtin.io.printLine t =
 builtin.io.putText h t = builtin.io.rethrow (builtin.io.IO.putText_ h t)
 ```
 
-<a name='9047492431551584650'/>
+<a name='r4ebki4zllpvmsok2vt3szghhy'/>
 
 ### builtin.io.readLine
 
@@ -1738,7 +1738,7 @@ builtin.io.readLine : '{builtin.io.IO} builtin.Text
 builtin.io.readLine () = builtin.io.getLine builtin.io.stdin
 ```
 
-<a name='7641686498086925666'/>
+<a name='ts6sa2kqm5shswselxksgpuxta'/>
 
 ### builtin.io.receive
 
@@ -1746,7 +1746,7 @@ builtin.io.readLine () = builtin.io.getLine builtin.io.stdin
 builtin.io.receive s n = builtin.io.rethrow (builtin.io.IO.receive_ s n)
 ```
 
-<a name='8303178682758799108'/>
+<a name='4msgotybpm445d7rompcaakdzq'/>
 
 ### builtin.io.removeDirectory
 
@@ -1755,7 +1755,7 @@ builtin.io.removeDirectory d =
   builtin.io.rethrow (builtin.io.IO.removeDirectory_ d)
 ```
 
-<a name='2467524584460185396'/>
+<a name='fyrsdbzku2qsc56wra4qgqga5m'/>
 
 ### builtin.io.removeFile
 
@@ -1763,7 +1763,7 @@ builtin.io.removeDirectory d =
 builtin.io.removeFile d = builtin.io.rethrow (builtin.io.IO.removeFile_ d)
 ```
 
-<a name='5361785741542466158'/>
+<a name='odycxdcvpceuvxb25pue2zas3i'/>
 
 ### builtin.io.renameDirectory
 
@@ -1772,7 +1772,7 @@ builtin.io.renameDirectory from to =
   builtin.io.rethrow (builtin.io.IO.renameDirectory_ from to)
 ```
 
-<a name='2810195704643154762'/>
+<a name='y6isaaqg27geqskyd7q5tdf6uy'/>
 
 ### builtin.io.renameFile
 
@@ -1781,7 +1781,7 @@ builtin.io.renameFile from to =
   builtin.io.rethrow (builtin.io.IO.renameFile_ from to)
 ```
 
-<a name='5814593162789285776'/>
+<a name='ubmisop4fjpfuds7cdbwxvexye'/>
 
 ### builtin.io.rethrow
 
@@ -1792,7 +1792,7 @@ builtin.io.rethrow x =
     builtin.Either.Right a -> a
 ```
 
-<a name='6181260182412569664'/>
+<a name='uzt2hfwtc6gva24fzejrm2czdu'/>
 
 ### builtin.io.seek
 
@@ -1800,7 +1800,7 @@ builtin.io.rethrow x =
 builtin.io.seek h m i = builtin.io.rethrow (builtin.io.IO.seek_ h m i)
 ```
 
-<a name='6183793577614475430'/>
+<a name='qqd4fpu3nzzthutde3cnoxvwzm'/>
 
 ### builtin.io.send
 
@@ -1808,7 +1808,7 @@ builtin.io.seek h m i = builtin.io.rethrow (builtin.io.IO.seek_ h m i)
 builtin.io.send s bs = builtin.io.rethrow (builtin.io.IO.send_ s bs)
 ```
 
-<a name='5076587535912172962'/>
+<a name='h2jfs264soohpxw7tdrisbxvdm'/>
 
 ### builtin.io.serverSocket
 
@@ -1817,7 +1817,7 @@ builtin.io.serverSocket host service =
   builtin.io.rethrow (builtin.io.IO.serverSocket_ host service)
 ```
 
-<a name='6887921679790598122'/>
+<a name='wapnynywrltx2lfajci3ka2s5m'/>
 
 ### builtin.io.setBuffering
 
@@ -1826,7 +1826,7 @@ builtin.io.setBuffering h bm =
   builtin.io.rethrow (builtin.io.IO.setBuffering_ h bm)
 ```
 
-<a name='8557332659964056293'/>
+<a name='rr5bz3opnmpty4fjd22mjc5osa'/>
 
 ### builtin.io.setCurrentDirectory
 
@@ -1835,7 +1835,7 @@ builtin.io.setCurrentDirectory d =
   builtin.io.rethrow (builtin.io.IO.setCurrentDirectory_ d)
 ```
 
-<a name='1137895461247182454'/>
+<a name='imqrap5ol6y3xmteqnyqmuvvpm'/>
 
 ### builtin.io.stderr
 
@@ -1843,7 +1843,7 @@ builtin.io.setCurrentDirectory d =
 builtin.io.stderr = builtin.io.Handle.Handle "stderr"
 ```
 
-<a name='3244480646677181479'/>
+<a name='v4licm4fuvnpceiw6fpk6t4xyu'/>
 
 ### builtin.io.stdin
 
@@ -1851,7 +1851,7 @@ builtin.io.stderr = builtin.io.Handle.Handle "stderr"
 builtin.io.stdin = builtin.io.Handle.Handle "stdin"
 ```
 
-<a name='913825163455496275'/>
+<a name='hiigled2r57v37kt72fxgkotly'/>
 
 ### builtin.io.stdout
 
@@ -1859,7 +1859,7 @@ builtin.io.stdin = builtin.io.Handle.Handle "stdin"
 builtin.io.stdout = builtin.io.Handle.Handle "stdout"
 ```
 
-<a name='1891380862370288542'/>
+<a name='3fcsrmet7pejps5cbwy23um54m'/>
 
 ### builtin.io.systemTime
 
@@ -1868,7 +1868,7 @@ builtin.io.systemTime : '{builtin.io.IO} builtin.io.EpochTime
 builtin.io.systemTime () = builtin.io.rethrow builtin.io.IO.systemTime_
 ```
 
-<a name='9109026890699064102'/>
+<a name='qwzxbpefl5p5wnv4mfpgj7ymsy'/>
 
 ### builtin.links.isTest
 
@@ -1876,7 +1876,7 @@ builtin.io.systemTime () = builtin.io.rethrow builtin.io.IO.systemTime_
 builtin.links.isTest = builtin.IsTest.IsTest
 ```
 
-<a name='4094206991234043373'/>
+<a name='g2ro366zpfmo4c23lzqx34fdmq'/>
 
 ### exampleAdd
 
