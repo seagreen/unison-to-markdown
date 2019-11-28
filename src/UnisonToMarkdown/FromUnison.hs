@@ -68,11 +68,15 @@ fromUnisonNamespace path namespace = do
   types <- getTypes codebase branch0
   terms <- getTerms codebase branch0
 
+  let
+    (namespaceTypes, depTypes) = Map.partitionWithKey isInNamespace types
+    (namespaceTerms, depTerms) = Map.partitionWithKey isInNamespace terms
+
   pure NamespaceAndDeps
-    { namespaceTypes = Map.filterWithKey isInNamespace types
-    , namespaceTerms = Map.filterWithKey isInNamespace terms
-    , depTypes = mempty
-    , depTerms = mempty
+    { namespaceTypes = namespaceTypes
+    , namespaceTerms = namespaceTerms
+    , depTypes = depTypes
+    , depTerms = depTerms
     }
 
 -- | NOTE: there's some duplication between this and 'fromUnisonNamespace'.
