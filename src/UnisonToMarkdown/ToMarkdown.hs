@@ -15,17 +15,34 @@ toMarkdownNamespace namespace NamespaceAndDeps{namespaceTypes, namespaceTerms} =
 
      "# " <> namespace <> " table of contents" <> "\n\n"
   <> "## Types\n\n"
-  <> indexEntries namespaceTypes <> "\n"
+  <> indexEntries nsTypes <> "\n"
   <> "## Terms\n\n"
-  <> indexEntries namespaceTerms <> "\n"
+  <> indexEntries nsTerms <> "\n"
   <> "# Types" <> "\n\n"
-  <> mainEntries namespaceTypes <> "\n"
+  <> mainEntries nsTypes <> "\n"
   <> "# Terms" <> "\n\n"
-  <> mainEntries namespaceTerms
+  <> mainEntries nsTerms
   -- <> "# Dependency types" <> "\n\n"
   -- <> mainEntries depTypes <> "\n"
   -- <> "# Dependency terms" <> "\n\n"
   -- <> mainEntries depTerms
+  where
+    nsTypes :: Map Name Text
+    nsTypes =
+      Map.mapKeys stripNamespace namespaceTypes
+
+    nsTerms :: Map Name Text
+    nsTerms =
+      Map.mapKeys stripNamespace namespaceTerms
+
+    stripNamespace :: Name -> Name
+    stripNamespace (Name t) =
+      case Text.stripPrefix (namespace <> ".") t of
+        Nothing ->
+          Name t
+
+        Just stripped ->
+          Name stripped
 
 toMarkdownAll :: All -> Text
 toMarkdownAll (All types terms) =

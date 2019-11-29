@@ -2,113 +2,113 @@
 
 ## Types
 
-+ [builtin.io.BufferMode](#6un2h33oy6qhinpgpxa3mwbrw4)
-+ [builtin.io.EpochTime](#6oixfqlyjemavsg6skuzjarvyq)
-+ [builtin.io.Error](#uermdn3lvcg35ibrcb4yklmp7y)
-+ [builtin.io.ErrorDescription](#y76fv4jgawmnnzxq3bcknlv6su)
-+ [builtin.io.ErrorLocation](#hheh3cwsychsmuhslaqtbv7i4a)
-+ [builtin.io.ErrorType](#l5y3obnoooxx2vs7wygsex3ypu)
-+ [builtin.io.FilePath](#yqk5q4wtwkbmpfpxc7a5pkmbae)
-+ [builtin.io.Handle](#daizk3nwe4mdhbwfitufujb4wq)
-+ [builtin.io.HostName](#fwlsqgi3s655duzanzgk3gnfeu)
-+ [builtin.io.IO](#wfvrhht3dbexc47ytfpufrm23m)
-+ [builtin.io.Mode](#cnr7zvu3qhqv6fd7g5thu7xw4m)
-+ [builtin.io.SeekMode](#2hupcpprdmvqcrlaavm2ujzw3y)
-+ [builtin.io.ServiceName](#pmf2taqtjab5ezvsf4d5zgtvhy)
-+ [builtin.io.Socket](#qef2a2ahsgx5ko5yt6ktd32uyu)
-+ [builtin.io.ThreadId](#tqdsdwgxebjhavmak5sfy3f32y)
++ [BufferMode](#xr5i5nborq73zsiokfhgywaqy4)
++ [EpochTime](#wvij3in2yibyzuagdsxyr6ta4q)
++ [Error](#savq2vp5333prvsr7yidln6uxu)
++ [ErrorDescription](#3ju4xl7u2ofyon3wm7xmkso6li)
++ [ErrorLocation](#keeohehapp72m7webexsaez7am)
++ [ErrorType](#qrth4bo7uoawwemthy5o7ggmcu)
++ [FilePath](#f62ahzy5rlpcxj426p3mi2k5be)
++ [Handle](#ydvliyu64i5gixkhi4dugnn2ma)
++ [HostName](#psxnctjnua76lfxynyrgywtwyq)
++ [IO](#z44if4oehkzcx7yl3hmc3azfdm)
++ [Mode](#muf6mgesx5uqajqisvckxpm5ey)
++ [SeekMode](#unsc2lquicg5ja577ocu7wc2fq)
++ [ServiceName](#hrqyqh3ut74m3w7uvvctpvw55a)
++ [Socket](#nh3jwwnk432o4gshxpaqq3wnwq)
++ [ThreadId](#ne7hlcmhf55m2ptj3ay5aiww5i)
 
 ## Terms
 
-+ [builtin.io.accept](#vjowrufdrhhfcqmks4qrijcihu)
-+ [builtin.io.bracket](#axg4elk2s36qy7ysrq5c5n6k7a)
-+ [builtin.io.clientSocket](#xw2enc22omwrchuoyvejt5febq)
-+ [builtin.io.closeFile](#mqt7fexqkqlxdbptojybjifiqq)
-+ [builtin.io.closeSocket](#qmzv4efab5psm2shi2bn6a5bcq)
-+ [builtin.io.createDirectory](#fhk5ydc4b6xqd7pbjjarbck2hi)
-+ [builtin.io.delay](#q7fgaals2lds5fstf2t2yvnyae)
-+ [builtin.io.directoryContents](#hy637equk55yelj35hwja6m6ee)
-+ [builtin.io.fileExists](#s7md4m2n7t52afwk2nwanmjpqe)
-+ [builtin.io.fork](#h2gzuarwmmdnz4kd6oo5df4bae)
-+ [builtin.io.getBuffering](#3fbwle3ipcnmlw4ult22gbxg7y)
-+ [builtin.io.getCurrentDirectory](#rqm43xxg6b3ddn36ayenm35fxa)
-+ [builtin.io.getFileSize](#hhz6ibvhdq4pys4j7wvex2przm)
-+ [builtin.io.getFileTimestamp](#o6hweauasqwk5cjqkyvsugvhty)
-+ [builtin.io.getLine](#mk4ndgj2d6eodhqrpqe65fhy5u)
-+ [builtin.io.getTemporaryDirectory](#vwu6eccqsejthycgdky4kxpjge)
-+ [builtin.io.getText](#fa4dqqjm2itqynoyaquveu7i3a)
-+ [builtin.io.isDirectory](#jqttqucnfrfrycaabiulpfuw3e)
-+ [builtin.io.isFileEOF](#jjtvnolpzz65oezz227kpimslq)
-+ [builtin.io.isFileOpen](#ozkk6h4j6ozpixtwy5zkz2kuv4)
-+ [builtin.io.isSeekable](#lo7p36lxc23wkwz6c6pgms5mcq)
-+ [builtin.io.kill](#nfrgo6jof2izj3u3ncaelmrwzu)
-+ [builtin.io.listen](#ndu7b5vin5q37fozed62mbz2wu)
-+ [builtin.io.openFile](#tsuovfpui5e7vydv2un33b4zoq)
-+ [builtin.io.position](#lhu7yb5u75thm2wyqcir5nuf3m)
-+ [builtin.io.printLine](#l2us7xaoviro6qrkzdmqvv37ne)
-+ [builtin.io.putText](#w7kske4o54rqkuuze4auz5h2uq)
-+ [builtin.io.readLine](#r4ebki4zllpvmsok2vt3szghhy)
-+ [builtin.io.receive](#ts6sa2kqm5shswselxksgpuxta)
-+ [builtin.io.removeDirectory](#4msgotybpm445d7rompcaakdzq)
-+ [builtin.io.removeFile](#fyrsdbzku2qsc56wra4qgqga5m)
-+ [builtin.io.renameDirectory](#odycxdcvpceuvxb25pue2zas3i)
-+ [builtin.io.renameFile](#y6isaaqg27geqskyd7q5tdf6uy)
-+ [builtin.io.rethrow](#ubmisop4fjpfuds7cdbwxvexye)
-+ [builtin.io.seek](#uzt2hfwtc6gva24fzejrm2czdu)
-+ [builtin.io.send](#qqd4fpu3nzzthutde3cnoxvwzm)
-+ [builtin.io.serverSocket](#h2jfs264soohpxw7tdrisbxvdm)
-+ [builtin.io.setBuffering](#wapnynywrltx2lfajci3ka2s5m)
-+ [builtin.io.setCurrentDirectory](#rr5bz3opnmpty4fjd22mjc5osa)
-+ [builtin.io.stderr](#imqrap5ol6y3xmteqnyqmuvvpm)
-+ [builtin.io.stdin](#v4licm4fuvnpceiw6fpk6t4xyu)
-+ [builtin.io.stdout](#hiigled2r57v37kt72fxgkotly)
-+ [builtin.io.systemTime](#3fcsrmet7pejps5cbwy23um54m)
++ [accept](#jk7hpqqb74iwmpgn6ux5n3hkqy)
++ [bracket](#iwz27lvluzykhrt5zlq4rzpyv4)
++ [clientSocket](#7yjme2wgwhwlwdlyire34gm2ju)
++ [closeFile](#7ydby326mfwqjtzieg2o5me4su)
++ [closeSocket](#fy3q2a5a7v4w66lhdh522iflgy)
++ [createDirectory](#hqf5ocrbzbc6czojanbjsfhwhu)
++ [delay](#ojb7rptveu5pxlpxi54goaq7rm)
++ [directoryContents](#lcjwgxpizngho6arei3b2z3woa)
++ [fileExists](#3ba3rnhtx4zrwmixmd7e732nam)
++ [fork](#wl6ljoujr5dzpeahnw6v3kqth4)
++ [getBuffering](#ryvrqnnxnohatbqj2q4ov2jqgy)
++ [getCurrentDirectory](#migjtjevvco32womnkfoft2o6m)
++ [getFileSize](#4sytumptsatoex2mpko47jvivi)
++ [getFileTimestamp](#mgjlglhas4noibvruexw62ckuy)
++ [getLine](#zd7zzxivocprd5uqasa3fdlj5a)
++ [getTemporaryDirectory](#popnvibf6w7qcz7gzgaipmqvxq)
++ [getText](#aca6zt73kcgb2rlyevvwen5ndu)
++ [isDirectory](#obcrzyptn6a5qjdcni5ycljpmu)
++ [isFileEOF](#33tc266p4kbctmt6ndj3bxg2wu)
++ [isFileOpen](#2kat7kirwielrg43slkqb3kgha)
++ [isSeekable](#5afoeo4s74ix7xxsnbrjgmhz7y)
++ [kill](#kndtlccngqihc5ro3z5pahct5a)
++ [listen](#qooxekfvztda4vcfkcj2szvyyi)
++ [openFile](#42c7vd2atngrsqffllgrq7zibm)
++ [position](#i5l74b75jevixyhknj3a22b5ny)
++ [printLine](#b23e7gkllx3ajtm2aqipidrnye)
++ [putText](#x3v2x2ffyd5dzl2p52nbmkiv3i)
++ [readLine](#axta3a2tj7liiaridtolyt6l6a)
++ [receive](#zplr6djrcqjz2ofi2canmehf7u)
++ [removeDirectory](#rovrs7rvceppmsq4lwuaejj4hi)
++ [removeFile](#zhtkykzz2msualiczsuptpnn7e)
++ [renameDirectory](#zx4dc3eg3373ffx7kpyfjmza24)
++ [renameFile](#vsvfiga7qmje77icofcvo552va)
++ [rethrow](#veqqo52zox3twi7frt6ky5gpzq)
++ [seek](#433dmisiqbndnrq5ebo3y32aoy)
++ [send](#eva5sofquweumcinpk654djysa)
++ [serverSocket](#kga2fwt7o5mk6taklnjmlfjdxe)
++ [setBuffering](#kcazgnusxfvjprympf6thazegq)
++ [setCurrentDirectory](#qwcjwvyraiayr5feacur7lsboq)
++ [stderr](#ig7fguktys2tlpe5bjqq2o6wnm)
++ [stdin](#hrwck7wssyrfac5n63ghoqjxlq)
++ [stdout](#mqzc6xz76747ofzhtynqc6uzpy)
++ [systemTime](#awjs6jig6g5uqdfiko7hqi2sm4)
 
 # Types
 
-<a name='6un2h33oy6qhinpgpxa3mwbrw4'/>
+<a name='xr5i5nborq73zsiokfhgywaqy4'/>
 
-### builtin.io.BufferMode
+### BufferMode
 
 ```unison
 unique type builtin.io.BufferMode = Line | Block (builtin.Optional builtin.Nat)
 ```
 
-<a name='6oixfqlyjemavsg6skuzjarvyq'/>
+<a name='wvij3in2yibyzuagdsxyr6ta4q'/>
 
-### builtin.io.EpochTime
+### EpochTime
 
 ```unison
 unique type builtin.io.EpochTime = EpochTime builtin.Nat
 ```
 
-<a name='uermdn3lvcg35ibrcb4yklmp7y'/>
+<a name='savq2vp5333prvsr7yidln6uxu'/>
 
-### builtin.io.Error
+### Error
 
 ```unison
 type builtin.io.Error = Error builtin.io.ErrorType builtin.Text
 ```
 
-<a name='y76fv4jgawmnnzxq3bcknlv6su'/>
+<a name='3ju4xl7u2ofyon3wm7xmkso6li'/>
 
-### builtin.io.ErrorDescription
+### ErrorDescription
 
 ```unison
 unique type builtin.io.ErrorDescription = ErrorDescription builtin.Text
 ```
 
-<a name='hheh3cwsychsmuhslaqtbv7i4a'/>
+<a name='keeohehapp72m7webexsaez7am'/>
 
-### builtin.io.ErrorLocation
+### ErrorLocation
 
 ```unison
 unique type builtin.io.ErrorLocation = ErrorLocation builtin.Text
 ```
 
-<a name='l5y3obnoooxx2vs7wygsex3ypu'/>
+<a name='qrth4bo7uoawwemthy5o7ggmcu'/>
 
-### builtin.io.ErrorType
+### ErrorType
 
 ```unison
 unique type builtin.io.ErrorType
@@ -122,33 +122,33 @@ unique type builtin.io.ErrorType
   | UserError
 ```
 
-<a name='yqk5q4wtwkbmpfpxc7a5pkmbae'/>
+<a name='f62ahzy5rlpcxj426p3mi2k5be'/>
 
-### builtin.io.FilePath
+### FilePath
 
 ```unison
 unique type builtin.io.FilePath = FilePath builtin.Text
 ```
 
-<a name='daizk3nwe4mdhbwfitufujb4wq'/>
+<a name='ydvliyu64i5gixkhi4dugnn2ma'/>
 
-### builtin.io.Handle
+### Handle
 
 ```unison
 unique type builtin.io.Handle = Handle builtin.Text
 ```
 
-<a name='fwlsqgi3s655duzanzgk3gnfeu'/>
+<a name='psxnctjnua76lfxynyrgywtwyq'/>
 
-### builtin.io.HostName
+### HostName
 
 ```unison
 unique type builtin.io.HostName = HostName builtin.Text
 ```
 
-<a name='wfvrhht3dbexc47ytfpufrm23m'/>
+<a name='z44if4oehkzcx7yl3hmc3azfdm'/>
 
-### builtin.io.IO
+### IO
 
 ```unison
 ability builtin.io.IO where
@@ -268,41 +268,41 @@ ability builtin.io.IO where
     ->{builtin.io.IO} builtin.Either builtin.io.Error ()
 ```
 
-<a name='cnr7zvu3qhqv6fd7g5thu7xw4m'/>
+<a name='muf6mgesx5uqajqisvckxpm5ey'/>
 
-### builtin.io.Mode
+### Mode
 
 ```unison
 type builtin.io.Mode = Read | Write | Append | ReadWrite
 ```
 
-<a name='2hupcpprdmvqcrlaavm2ujzw3y'/>
+<a name='unsc2lquicg5ja577ocu7wc2fq'/>
 
-### builtin.io.SeekMode
+### SeekMode
 
 ```unison
 unique type builtin.io.SeekMode = Absolute | Relative | FromEnd
 ```
 
-<a name='pmf2taqtjab5ezvsf4d5zgtvhy'/>
+<a name='hrqyqh3ut74m3w7uvvctpvw55a'/>
 
-### builtin.io.ServiceName
+### ServiceName
 
 ```unison
 unique type builtin.io.ServiceName = ServiceName builtin.Text
 ```
 
-<a name='qef2a2ahsgx5ko5yt6ktd32uyu'/>
+<a name='nh3jwwnk432o4gshxpaqq3wnwq'/>
 
-### builtin.io.Socket
+### Socket
 
 ```unison
 unique type builtin.io.Socket = Socket builtin.Text
 ```
 
-<a name='tqdsdwgxebjhavmak5sfy3f32y'/>
+<a name='ne7hlcmhf55m2ptj3ay5aiww5i'/>
 
-### builtin.io.ThreadId
+### ThreadId
 
 ```unison
 unique type builtin.io.ThreadId = ThreadId builtin.Text
@@ -311,101 +311,101 @@ unique type builtin.io.ThreadId = ThreadId builtin.Text
 
 # Terms
 
-<a name='vjowrufdrhhfcqmks4qrijcihu'/>
+<a name='jk7hpqqb74iwmpgn6ux5n3hkqy'/>
 
-### builtin.io.accept
+### accept
 
 ```unison
 builtin.io.accept s = builtin.io.rethrow (builtin.io.IO.accept_ s)
 ```
 
-<a name='axg4elk2s36qy7ysrq5c5n6k7a'/>
+<a name='iwz27lvluzykhrt5zlq4rzpyv4'/>
 
-### builtin.io.bracket
+### bracket
 
 ```unison
 builtin.io.bracket acquire release what =
   builtin.io.rethrow (builtin.io.IO.bracket_ acquire release what)
 ```
 
-<a name='xw2enc22omwrchuoyvejt5febq'/>
+<a name='7yjme2wgwhwlwdlyire34gm2ju'/>
 
-### builtin.io.clientSocket
+### clientSocket
 
 ```unison
 builtin.io.clientSocket host service =
   builtin.io.rethrow (builtin.io.IO.clientSocket_ host service)
 ```
 
-<a name='mqt7fexqkqlxdbptojybjifiqq'/>
+<a name='7ydby326mfwqjtzieg2o5me4su'/>
 
-### builtin.io.closeFile
+### closeFile
 
 ```unison
 builtin.io.closeFile f = builtin.io.rethrow (builtin.io.IO.closeFile_ f)
 ```
 
-<a name='qmzv4efab5psm2shi2bn6a5bcq'/>
+<a name='fy3q2a5a7v4w66lhdh522iflgy'/>
 
-### builtin.io.closeSocket
+### closeSocket
 
 ```unison
 builtin.io.closeSocket s = builtin.io.rethrow (builtin.io.IO.closeSocket_ s)
 ```
 
-<a name='fhk5ydc4b6xqd7pbjjarbck2hi'/>
+<a name='hqf5ocrbzbc6czojanbjsfhwhu'/>
 
-### builtin.io.createDirectory
+### createDirectory
 
 ```unison
 builtin.io.createDirectory d =
   builtin.io.rethrow (builtin.io.IO.createDirectory_ d)
 ```
 
-<a name='q7fgaals2lds5fstf2t2yvnyae'/>
+<a name='ojb7rptveu5pxlpxi54goaq7rm'/>
 
-### builtin.io.delay
+### delay
 
 ```unison
 builtin.io.delay n = builtin.io.rethrow (builtin.io.IO.delay_ n)
 ```
 
-<a name='hy637equk55yelj35hwja6m6ee'/>
+<a name='lcjwgxpizngho6arei3b2z3woa'/>
 
-### builtin.io.directoryContents
+### directoryContents
 
 ```unison
 builtin.io.directoryContents d =
   builtin.io.rethrow (builtin.io.IO.directoryContents_ d)
 ```
 
-<a name='s7md4m2n7t52afwk2nwanmjpqe'/>
+<a name='3ba3rnhtx4zrwmixmd7e732nam'/>
 
-### builtin.io.fileExists
+### fileExists
 
 ```unison
 builtin.io.fileExists d = builtin.io.rethrow (builtin.io.IO.fileExists_ d)
 ```
 
-<a name='h2gzuarwmmdnz4kd6oo5df4bae'/>
+<a name='wl6ljoujr5dzpeahnw6v3kqth4'/>
 
-### builtin.io.fork
+### fork
 
 ```unison
 builtin.io.fork a = builtin.io.rethrow (builtin.io.IO.fork_ a)
 ```
 
-<a name='3fbwle3ipcnmlw4ult22gbxg7y'/>
+<a name='ryvrqnnxnohatbqj2q4ov2jqgy'/>
 
-### builtin.io.getBuffering
+### getBuffering
 
 ```unison
 builtin.io.getBuffering h = builtin.io.rethrow (builtin.io.IO.getBuffering_ h)
 ```
 
-<a name='rqm43xxg6b3ddn36ayenm35fxa'/>
+<a name='migjtjevvco32womnkfoft2o6m'/>
 
-### builtin.io.getCurrentDirectory
+### getCurrentDirectory
 
 ```unison
 builtin.io.getCurrentDirectory : '{builtin.io.IO} builtin.io.FilePath
@@ -413,34 +413,34 @@ builtin.io.getCurrentDirectory () =
   builtin.io.rethrow builtin.io.IO.getCurrentDirectory_
 ```
 
-<a name='hhz6ibvhdq4pys4j7wvex2przm'/>
+<a name='4sytumptsatoex2mpko47jvivi'/>
 
-### builtin.io.getFileSize
+### getFileSize
 
 ```unison
 builtin.io.getFileSize d = builtin.io.rethrow (builtin.io.IO.getFileSize_ d)
 ```
 
-<a name='o6hweauasqwk5cjqkyvsugvhty'/>
+<a name='mgjlglhas4noibvruexw62ckuy'/>
 
-### builtin.io.getFileTimestamp
+### getFileTimestamp
 
 ```unison
 builtin.io.getFileTimestamp d =
   builtin.io.rethrow (builtin.io.IO.getFileTimestamp_ d)
 ```
 
-<a name='mk4ndgj2d6eodhqrpqe65fhy5u'/>
+<a name='zd7zzxivocprd5uqasa3fdlj5a'/>
 
-### builtin.io.getLine
+### getLine
 
 ```unison
 builtin.io.getLine h = builtin.io.rethrow (builtin.io.IO.getLine_ h)
 ```
 
-<a name='vwu6eccqsejthycgdky4kxpjge'/>
+<a name='popnvibf6w7qcz7gzgaipmqvxq'/>
 
-### builtin.io.getTemporaryDirectory
+### getTemporaryDirectory
 
 ```unison
 builtin.io.getTemporaryDirectory : '{builtin.io.IO} builtin.io.FilePath
@@ -448,81 +448,81 @@ builtin.io.getTemporaryDirectory () =
   builtin.io.rethrow builtin.io.IO.getTemporaryDirectory_
 ```
 
-<a name='fa4dqqjm2itqynoyaquveu7i3a'/>
+<a name='aca6zt73kcgb2rlyevvwen5ndu'/>
 
-### builtin.io.getText
+### getText
 
 ```unison
 builtin.io.getText h = builtin.io.rethrow (builtin.io.IO.getText_ h)
 ```
 
-<a name='jqttqucnfrfrycaabiulpfuw3e'/>
+<a name='obcrzyptn6a5qjdcni5ycljpmu'/>
 
-### builtin.io.isDirectory
+### isDirectory
 
 ```unison
 builtin.io.isDirectory d = builtin.io.rethrow (builtin.io.IO.isDirectory_ d)
 ```
 
-<a name='jjtvnolpzz65oezz227kpimslq'/>
+<a name='33tc266p4kbctmt6ndj3bxg2wu'/>
 
-### builtin.io.isFileEOF
+### isFileEOF
 
 ```unison
 builtin.io.isFileEOF h = builtin.io.rethrow (builtin.io.IO.isFileEOF_ h)
 ```
 
-<a name='ozkk6h4j6ozpixtwy5zkz2kuv4'/>
+<a name='2kat7kirwielrg43slkqb3kgha'/>
 
-### builtin.io.isFileOpen
+### isFileOpen
 
 ```unison
 builtin.io.isFileOpen h = builtin.io.rethrow (builtin.io.IO.isFileOpen_ h)
 ```
 
-<a name='lo7p36lxc23wkwz6c6pgms5mcq'/>
+<a name='5afoeo4s74ix7xxsnbrjgmhz7y'/>
 
-### builtin.io.isSeekable
+### isSeekable
 
 ```unison
 builtin.io.isSeekable h = builtin.io.rethrow (builtin.io.IO.isSeekable_ h)
 ```
 
-<a name='nfrgo6jof2izj3u3ncaelmrwzu'/>
+<a name='kndtlccngqihc5ro3z5pahct5a'/>
 
-### builtin.io.kill
+### kill
 
 ```unison
 builtin.io.kill t = builtin.io.rethrow (builtin.io.IO.kill_ t)
 ```
 
-<a name='ndu7b5vin5q37fozed62mbz2wu'/>
+<a name='qooxekfvztda4vcfkcj2szvyyi'/>
 
-### builtin.io.listen
+### listen
 
 ```unison
 builtin.io.listen s = builtin.io.rethrow (builtin.io.IO.listen_ s)
 ```
 
-<a name='tsuovfpui5e7vydv2un33b4zoq'/>
+<a name='42c7vd2atngrsqffllgrq7zibm'/>
 
-### builtin.io.openFile
+### openFile
 
 ```unison
 builtin.io.openFile f m = builtin.io.rethrow (builtin.io.IO.openFile_ f m)
 ```
 
-<a name='lhu7yb5u75thm2wyqcir5nuf3m'/>
+<a name='i5l74b75jevixyhknj3a22b5ny'/>
 
-### builtin.io.position
+### position
 
 ```unison
 builtin.io.position h = builtin.io.rethrow (builtin.io.IO.position_ h)
 ```
 
-<a name='l2us7xaoviro6qrkzdmqvv37ne'/>
+<a name='b23e7gkllx3ajtm2aqipidrnye'/>
 
-### builtin.io.printLine
+### printLine
 
 ```unison
 builtin.io.printLine t =
@@ -531,69 +531,69 @@ builtin.io.printLine t =
   putText stdout "\n"
 ```
 
-<a name='w7kske4o54rqkuuze4auz5h2uq'/>
+<a name='x3v2x2ffyd5dzl2p52nbmkiv3i'/>
 
-### builtin.io.putText
+### putText
 
 ```unison
 builtin.io.putText h t = builtin.io.rethrow (builtin.io.IO.putText_ h t)
 ```
 
-<a name='r4ebki4zllpvmsok2vt3szghhy'/>
+<a name='axta3a2tj7liiaridtolyt6l6a'/>
 
-### builtin.io.readLine
+### readLine
 
 ```unison
 builtin.io.readLine : '{builtin.io.IO} builtin.Text
 builtin.io.readLine () = builtin.io.getLine builtin.io.stdin
 ```
 
-<a name='ts6sa2kqm5shswselxksgpuxta'/>
+<a name='zplr6djrcqjz2ofi2canmehf7u'/>
 
-### builtin.io.receive
+### receive
 
 ```unison
 builtin.io.receive s n = builtin.io.rethrow (builtin.io.IO.receive_ s n)
 ```
 
-<a name='4msgotybpm445d7rompcaakdzq'/>
+<a name='rovrs7rvceppmsq4lwuaejj4hi'/>
 
-### builtin.io.removeDirectory
+### removeDirectory
 
 ```unison
 builtin.io.removeDirectory d =
   builtin.io.rethrow (builtin.io.IO.removeDirectory_ d)
 ```
 
-<a name='fyrsdbzku2qsc56wra4qgqga5m'/>
+<a name='zhtkykzz2msualiczsuptpnn7e'/>
 
-### builtin.io.removeFile
+### removeFile
 
 ```unison
 builtin.io.removeFile d = builtin.io.rethrow (builtin.io.IO.removeFile_ d)
 ```
 
-<a name='odycxdcvpceuvxb25pue2zas3i'/>
+<a name='zx4dc3eg3373ffx7kpyfjmza24'/>
 
-### builtin.io.renameDirectory
+### renameDirectory
 
 ```unison
 builtin.io.renameDirectory from to =
   builtin.io.rethrow (builtin.io.IO.renameDirectory_ from to)
 ```
 
-<a name='y6isaaqg27geqskyd7q5tdf6uy'/>
+<a name='vsvfiga7qmje77icofcvo552va'/>
 
-### builtin.io.renameFile
+### renameFile
 
 ```unison
 builtin.io.renameFile from to =
   builtin.io.rethrow (builtin.io.IO.renameFile_ from to)
 ```
 
-<a name='ubmisop4fjpfuds7cdbwxvexye'/>
+<a name='veqqo52zox3twi7frt6ky5gpzq'/>
 
-### builtin.io.rethrow
+### rethrow
 
 ```unison
 builtin.io.rethrow x =
@@ -602,76 +602,76 @@ builtin.io.rethrow x =
     builtin.Either.Right a -> a
 ```
 
-<a name='uzt2hfwtc6gva24fzejrm2czdu'/>
+<a name='433dmisiqbndnrq5ebo3y32aoy'/>
 
-### builtin.io.seek
+### seek
 
 ```unison
 builtin.io.seek h m i = builtin.io.rethrow (builtin.io.IO.seek_ h m i)
 ```
 
-<a name='qqd4fpu3nzzthutde3cnoxvwzm'/>
+<a name='eva5sofquweumcinpk654djysa'/>
 
-### builtin.io.send
+### send
 
 ```unison
 builtin.io.send s bs = builtin.io.rethrow (builtin.io.IO.send_ s bs)
 ```
 
-<a name='h2jfs264soohpxw7tdrisbxvdm'/>
+<a name='kga2fwt7o5mk6taklnjmlfjdxe'/>
 
-### builtin.io.serverSocket
+### serverSocket
 
 ```unison
 builtin.io.serverSocket host service =
   builtin.io.rethrow (builtin.io.IO.serverSocket_ host service)
 ```
 
-<a name='wapnynywrltx2lfajci3ka2s5m'/>
+<a name='kcazgnusxfvjprympf6thazegq'/>
 
-### builtin.io.setBuffering
+### setBuffering
 
 ```unison
 builtin.io.setBuffering h bm =
   builtin.io.rethrow (builtin.io.IO.setBuffering_ h bm)
 ```
 
-<a name='rr5bz3opnmpty4fjd22mjc5osa'/>
+<a name='qwcjwvyraiayr5feacur7lsboq'/>
 
-### builtin.io.setCurrentDirectory
+### setCurrentDirectory
 
 ```unison
 builtin.io.setCurrentDirectory d =
   builtin.io.rethrow (builtin.io.IO.setCurrentDirectory_ d)
 ```
 
-<a name='imqrap5ol6y3xmteqnyqmuvvpm'/>
+<a name='ig7fguktys2tlpe5bjqq2o6wnm'/>
 
-### builtin.io.stderr
+### stderr
 
 ```unison
 builtin.io.stderr = builtin.io.Handle.Handle "stderr"
 ```
 
-<a name='v4licm4fuvnpceiw6fpk6t4xyu'/>
+<a name='hrwck7wssyrfac5n63ghoqjxlq'/>
 
-### builtin.io.stdin
+### stdin
 
 ```unison
 builtin.io.stdin = builtin.io.Handle.Handle "stdin"
 ```
 
-<a name='hiigled2r57v37kt72fxgkotly'/>
+<a name='mqzc6xz76747ofzhtynqc6uzpy'/>
 
-### builtin.io.stdout
+### stdout
 
 ```unison
 builtin.io.stdout = builtin.io.Handle.Handle "stdout"
 ```
 
-<a name='3fcsrmet7pejps5cbwy23um54m'/>
+<a name='awjs6jig6g5uqdfiko7hqi2sm4'/>
 
-### builtin.io.systemTime
+### systemTime
 
 ```unison
 builtin.io.systemTime : '{builtin.io.IO} builtin.io.EpochTime
