@@ -1,4 +1,4 @@
--- | Create out own anchor links using <a> tags.
+-- | Create our own anchor links using <a> tags.
 --
 -- This is because:
 --
